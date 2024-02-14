@@ -51,7 +51,7 @@
             align-items: center;
             display: flex;
             flex-direction: row;
-            justify-content: center;
+            justify-content: space-between;
             font-family: "Anton", sans-serif;
             font-weight: 100;
             width: 100%;
@@ -60,8 +60,8 @@
 
 
         .navbar img {
-            height: 35px;
-            width: 35px;
+            height: 30px;
+            width: 30px;
         }
 
         .img {
@@ -77,6 +77,48 @@
             color: white;
             text-decoration: none;
             margin: 0 25px;
+        }
+
+
+
+        .dropdown{
+            display: inline-block; 
+        }
+        .dropdown button{
+            background-color: #20232b;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-left: auto;
+        }
+        .dropdown a{
+            display: block;
+            color: black;
+            text-decoration: none;
+            padding: 10px 15px;
+        }
+        .dropdown .content{
+            display: none;
+            position: absolute;
+            background-color: hsl(0, 0%, 95%);
+            min-width: 10px;
+            box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+            margin-left: -16%;
+        }
+        .dropdown:hover .content{
+            display: block;
+            
+        }
+        .dropdown:hover button{
+            box-shadow: 0 0 5px white,
+           0 0 10px lightskyblue, 0 0 15px lightskyblue,
+           0 0 20px lightskyblue, 0 0 25px lightskyblue,
+           0 0 30px lightskyblue;
+            
+        }
+        .dropdown a:hover{
+            background-color: rgb(61, 53, 53);
+            color: white;
         }
 
         /*top portion*/
@@ -134,10 +176,19 @@
 <body>
     <div class = "background">
         <div class="navbar" style = "font-size: 25px;">
-            <a title="Blackcat, CC BY-SA 3.0 &lt;https://creativecommons.org/licenses/by-sa/3.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Association_football_ball_with_HEX-1AC66B_background.svg"><img width="256" alt="Association football ball with HEX-1AC66B background" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Association_football_ball_with_HEX-1AC66B_background.svg/256px-Association_football_ball_with_HEX-1AC66B_background.svg.png"></a>
-            Soccer Ranker
-            <a title="Blackcat, CC BY-SA 3.0 &lt;https://creativecommons.org/licenses/by-sa/3.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Association_football_ball_with_HEX-1AC66B_background.svg"><img width="256" alt="Association football ball with HEX-1AC66B background" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Association_football_ball_with_HEX-1AC66B_background.svg/256px-Association_football_ball_with_HEX-1AC66B_background.svg.png"></a>
-            
+            <div class="navbar-left"> <!-- Left part of the navbar --></div>
+            <div class="navbar-middle" style = "margin-left: 10px;">
+                <a title="Blackcat, CC BY-SA 3.0 &lt;https://creativecommons.org/licenses/by-sa/3.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Association_football_ball_with_HEX-1AC66B_background.svg"><img width="256" alt="Association football ball with HEX-1AC66B background" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Association_football_ball_with_HEX-1AC66B_background.svg/256px-Association_football_ball_with_HEX-1AC66B_background.svg.png"></a>
+                Soccer Ranker
+                <a title="Blackcat, CC BY-SA 3.0 &lt;https://creativecommons.org/licenses/by-sa/3.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Association_football_ball_with_HEX-1AC66B_background.svg"><img width="256" alt="Association football ball with HEX-1AC66B background" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Association_football_ball_with_HEX-1AC66B_background.svg/256px-Association_football_ball_with_HEX-1AC66B_background.svg.png"></a>
+            </div>
+            <div class="dropdown">
+                <button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="IconChangeColor" height="35px" width="35px"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM64 256c0-17.7 14.3-32 32-32H480c17.7 0 32 14.3 32 32s-14.3 32-32 32H96c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" id="mainIconPathAttribute" fill="#ffffff"></path></svg></button>
+                <div class="content">
+                    <a href= "fcbb spanish.html">FCB Rankings Spanish</a>
+                    <a href="WYR.html">FCB Would You Rather</a>
+                </div>
+            </div>
         </div>
         <div class="navbar" style = "background-color: rgba(83, 56, 23, 0.111);"></div>
         <div class = "detail">
@@ -169,7 +220,7 @@
                 <span style= "font-weight: bold; color: #3557ff;">FCB’s valued Brazilian player.</span>
                 While he is a relatively new player, he has quickly shown his technical
                 qualities and has adapted very well to their playstyle. He is Barcelona's
-                main man with <span style= "color: #3557ff;">G/As</span> at many times during each season. He posseses high dribbling
+                main man with <span style= "color: #3557ff;">G/As</span> at many times during each season. He possesses high dribbling
                 ability, <span style= "color: #3557ff;">ball control</span> and precise passing as a typical <span style= "color: #3557ff;">right winger</span>. And with his
                 high work rate, he is adaptable and can even drop down into semi-defensive positions.
                 A classy Brazilian.
