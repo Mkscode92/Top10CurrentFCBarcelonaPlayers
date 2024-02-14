@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FCB, the Present, Edition: Would You Rather</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Langar&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Langar&family=Protest+Riot&display=swap" rel="stylesheet">
+
+    <style> 
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Rajdhani", sans-serif;
+        font-style: normal;
+        height: 100vh;
+    }
+
+    .navbar{ 
+            /**/
+            position: fixed; 
+            top: 0; 
+            width: 100%;
+            /**/
+            box-sizing: border-box;
+            background-color: #20232b;
+            padding: 10px; 
+            display: flex;
+            font-family: "Anton", sans-serif;
+            font-weight: 100;
+            color: white;
+            border: 5px solid #ffed02;
+            letter-spacing: 2px;
+            justify-content: space-between;
+            z-index: 1000; 
+            box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+            align-items: center;
+    }
+
+    .navbar img {
+            height: 30px;
+            width: 30px;
+        }
+
+
+
+    .container {
+        display: flex;
+    }
+
+    .choices {
+        box-sizing: border-box;
+        height: 100vh;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        font-weight: 100;
+        color: white;
+        letter-spacing: 2px;
+        justify-content: center;
+        align-items: center;
+        font-size: 50px;
+        width: 49.75%;
+    }
+
+    .choices span{
+        width: 60%;
+    }
+    .choices span:hover{
+        transform: scale(1.5);
+        transition: 0.3s ease-in-out;
+        cursor: pointer;
+    }
+
+
+    .red { 
+        background-color: #a50044;
+        font-family: 'Protest Riot', sans-serif;
+    }
+
+    .blue { 
+        background-color: #004d98;
+        font-family: 'Langar', sans-serif;
+    }
+
+    .midline { 
+        box-sizing: border-box;
+        height: 100vh;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        font-weight: 100;
+        color: white;
+        letter-spacing: 2px;
+        justify-content: center;
+        align-items: center;
+        font-size: 50px;
+        width: 0.5%;
+        background-color: white;
+    }
+
+    .dropdown {
+        display: inline-block;
+        font-family: 'Protest Riot', sans-serif;
+    }
+        .dropdown button{
+            background-color: #20232b;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .dropdown a{
+            display: block;
+            color: black;
+            text-decoration: none;
+            padding: 10px 15px;
+        }
+        .dropdown .content{
+            display: none;
+            position: absolute;
+            background-color: hsl(0, 0%, 95%);
+            min-width: 10px;
+            box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+            margin-left: -11%;
+        }
+        .dropdown:hover .content{
+            display: block;
+            
+        }
+        .dropdown:hover button{
+            box-shadow: 0 0 5px white,
+           0 0 10px lightskyblue, 0 0 15px lightskyblue,
+           0 0 20px lightskyblue, 0 0 25px lightskyblue,
+           0 0 30px lightskyblue;
+            
+        }
+        .dropdown a:hover{
+            background-color: rgb(61, 53, 53);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="navbar-left"> <!-- Left part of the navbar -->
+            <a title="Blackcat, CC BY-SA 3.0 &lt;https://creativecommons.org/licenses/by-sa/3.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Association_football_ball_with_HEX-1AC66B_background.svg"><img width="256" alt="Association football ball with HEX-1AC66B background" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Association_football_ball_with_HEX-1AC66B_background.svg/256px-Association_football_ball_with_HEX-1AC66B_background.svg.png"></a>
+        </div>
+        <div class="navbar-middle"> <!-- Middle part of the navbar -->
+            <span>Would You Rather? - FCB Edition</span>
+        </div>
+        <div class="navbar-right"> <!-- Right part of the navbar -->
+            <div class="dropdown">
+                <button style = "margin-left: 10px;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="IconChangeColor" height="25px" width="25px"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM64 256c0-17.7 14.3-32 32-32H480c17.7 0 32 14.3 32 32s-14.3 32-32 32H96c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" id="mainIconPathAttribute" fill="#ffffff"></path></svg></button>
+                <div class="content">
+                    <a href= "fcbb.html">FCB Rankings English</a>
+                    <a href= "fcbb spanish.html">FCB Rankings Spanish</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class=" choices red"><span>Have Pedri in the team but not Gavi</span></div>
+        <div class="midline"></div>
+        <div class="choices blue"><span>Have Gavi in the team but not Pedri</span></div>
+    </div>
+</body>
+</html>
