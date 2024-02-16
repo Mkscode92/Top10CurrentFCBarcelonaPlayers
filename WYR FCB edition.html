@@ -50,23 +50,24 @@
 
     .container {
         display: flex;
-        flex-direction: column; /* Change to column layout */
-        align-items: center; /* Center align items */
+        flex-direction: column; 
+        align-items: center; 
     }
 
+    /*for mobile phones, etc (smaller screens)*/
     .choices {
         box-sizing: border-box;
-        height: 50vh; /* Adjust height */
+        height: 50vh; 
         text-align: center;
         display: flex;
-        flex-direction: column; /* Change to column layout */
+        flex-direction: column; 
         font-weight: 100;
         color: white;
         letter-spacing: 2px;
         justify-content: center;
         align-items: center;
-        font-size: 25px; /* Adjust font size */
-        width: 100%; /* Adjust width */
+        font-size: 50px; 
+        width: 100%; 
     }
 
     .choices:hover span {
@@ -85,7 +86,7 @@
         cursor: pointer;
     }
     .red:hover span{ 
-        transform: scale(1.2);
+        transform: scale(1.5);
         transition: transform 0.5s ease;
     }
 
@@ -95,12 +96,14 @@
         cursor: pointer;
     }
     .blue:hover span{ 
-        transform: scale(1.2);
+        transform: scale(1.5);
         transition: transform 0.5s ease;
     }
 
     .midline { 
-        display: none; /* Hide midline on mobile */
+        display: flex; 
+        height: 0.5%; 
+        background-color: white; 
     }
 
     .dropdown {
@@ -143,6 +146,7 @@
             color: white;
         }
 
+        /*for desktops, laptops, etc (larger screens)*/
         @media screen and (min-width: 600px){
             .choices {
                 font-size: 50px; 
