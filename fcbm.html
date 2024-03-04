@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FC Bayern Munich: Top 10 Best Currently Playing Players</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@500&family=Vina+Sans&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Langar&family=Protest+Riot&display=swap" rel="stylesheet">
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5377085184392554"
+     crossorigin="anonymous"></script>
+
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Rajdhani", sans-serif;
+            font-weight: 600;
+            font-style: normal;
+            background: #f8f8f8;
+            
+
+        }
+
+        h1 { 
+            font-size: 2.75rem;
+        }
+        p {
+            font-size: 1.25rem; 
+        }
+
+        .background { 
+            background: #f8f8f8;
+            width: 100%;
+            height: 100%;
+            
+        }
+
+        /*navbar*/
+        .navbar {
+            background-color: #20232b;
+            color: white;
+            padding: 20px;
+            align-items: center;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            font-family: "Anton", sans-serif;
+            font-weight: 100;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+
+        .navbar img {
+            height: 20px;
+            width: 20px;
+        }
+
+        .img {
+            
+            height: 50%;
+            width: 90%;
+            box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+           
+            
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+
+        @media screen and (min-width: 600px){
+            .navbar img {
+                height: 30px;
+                width: 30px;
+            }
+            .navbar a {
+                color: white;
+                text-decoration: none;
+                margin: 0 25px;
+            }
+        }
+
+
+        .dropdown{
+            display: inline-block;
+            font-family: 'Protest Riot', sans-serif; 
+        }
+        .dropdown button{
+            background-color: #20232b;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-left: auto;
+        }
+        .dropdown a{
+            display: block;
+            color: black;
+            text-decoration: none;
+            padding: 10px 15px;
+        }
+        .dropdown .content{
+            display: none;
+            position: absolute;
+            background-color: hsl(0, 0%, 95%);
+            min-width: 10px;
+            box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+            right: 0;
+            
+        }
+        .dropdown:hover .content{
+            display: block;
+            
+        }
+        .dropdown:hover button{
+            box-shadow: 0 0 5px white,
+           0 0 10px lightskyblue, 0 0 15px lightskyblue,
+           0 0 20px lightskyblue, 0 0 25px lightskyblue,
+           0 0 30px lightskyblue;
+            
+        }
+        .dropdown a:hover{
+            color: white;
+            background-color: #333;
+        }
+
+        /*left menu*/
+        .sidebar {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #333;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 10px;
+        box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+        }
+
+        .sidebar ul {
+        list-style-type: none;
+        padding: 0;
+        }
+
+
+        .sidebar ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 125%;
+        }
+
+        @media screen and (min-width: 800px) {
+            .sidebar ul li a {
+                font-size: 100%;
+            }
+            
+        }
+
+        .sidebar ul li a:hover {
+        text-decoration: underline rgb(255, 166, 0);
+        }
+
+        .close {
+        text-align: right;
+        }
+
+        .closebutton {
+        color: #fff;
+        font-size: 60px;
+        cursor: pointer;
+        padding-right: 10%;
+        }
+
+        .content {
+        flex-grow: 1;
+        padding: 20px;
+        }
+
+
+        /*top portion*/
+        .detail { 
+            padding-left: 13%; 
+            width: 85%;
+            color: #333132;
+            
+        }
+        
+        .detail p {
+            font-family: "Georgia", sans-serif;
+            font-weight:100;
+           
+        }
+
+        /*bottom portion*/
+
+        .rankings {
+            padding-left: 13%;
+            width: 80%;
+            color: #333132;
+            
+        }
+
+        @media screen and (min-width: 600px) {
+            .rankings {
+                padding-left: 13%;
+                width: 70%;
+                color: #333132; 
+            }
+        }
+        
+        .rankings p{
+            font-family: "Georgia", sans-serif;
+            font-weight:100;
+            border: 2px solid black;
+            border-radius: 25px;
+            padding: 20px;
+            box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+            line-height: 2;
+            background-color: white;
+            
+        }
+        .ranktitle { 
+            display: inline;
+            
+        }
+        .ranknumber { 
+            background-color: #0066B2;
+            justify-content: center;
+            align-items: center;
+            height: 40px;
+            width: 40px;
+            display: flex;
+            color: white;
+            font-weight: 300px;
+            padding:5px;
+            font-size:35px;
+            box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+        }    
+        
+        .blue {
+            color: #3557ff;
+        }
+    </style>
+</head>
+<body>
+    <div class = "background">
+        <div class="navbar" style = "font-size: 25px;">
+            <div class="navbar-left">
+                <div class="dropdown">
+                    <div class="sidebar">
+                        <div class="close">
+                          <span class="closebutton" onclick="document.querySelector('.sidebar').style.width = '0%'">&times;</span>
+                        </div>
+                        <ul>
+                            <li><a href = "index.html"style = "text-decoration: underline orange;">Home</a>
+                                <br>
+
+                                <li><a style="text-decoration: underline orange;">Rankings</a></li>
+                                <li><a href= "fcb.html">- FC Barcelona</a></li>
+                                <!--<li><a href= "fcbspanish.html">- FC Barcelona (Spanish)</a></li>-->
+                                <li><a href= "rm.html">- Real Madrid CF</a></li>
+                                <!--<li><a href= "rmspanish.html">- Real Madrid CF (Spanish)</a></li>-->
+                                <li><a href= "mc.html">- Manchester City FC</a></li>
+                                <!--<li><a href= "mcspanish.html">- Manchester City FC (Spanish)</a></li>-->
+                                <li><a href= "fcbm.html">- FC Bayern Munich</a></li>
+
+                                <br>
+                                <li><a style="text-decoration: underline orange;">Would You Rather</a></li>
+                                <li><a href= "FCBWYR edition.html">- FCB Edition</a></li>
+                                <li><a href= "RMWYR edition.html">- RMCF Edition</a></li>
+                                <li><a href= "MCWYR edition.html">- MCFC Edition</a></li>
+                                <li><a href= "FCBMWYR edition.html">-  FCBM Edition</a></li>
+                            </li>
+  
+  
+                        </ul>
+                    </div>
+                    <button><img src = "lmenu.svg" onclick="openmenu()" style = "height: 30px; width: 30px;"></button>
+                </div>
+            </div>
+            <div class="navbar-middle" style = "margin-left: 10px;">
+                <a title="Blackcat, CC BY-SA 3.0 &lt;https://creativecommons.org/licenses/by-sa/3.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Association_football_ball_with_HEX-1AC66B_background.svg"><img width="256" alt="Association football ball with HEX-1AC66B background" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Association_football_ball_with_HEX-1AC66B_background.svg/256px-Association_football_ball_with_HEX-1AC66B_background.svg.png"></a>
+                Soccer Ranker
+                <a title="Blackcat, CC BY-SA 3.0 &lt;https://creativecommons.org/licenses/by-sa/3.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Association_football_ball_with_HEX-1AC66B_background.svg"><img width="256" alt="Association football ball with HEX-1AC66B background" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Association_football_ball_with_HEX-1AC66B_background.svg/256px-Association_football_ball_with_HEX-1AC66B_background.svg.png"></a>
+            </div>
+            <div class="dropdown">
+                <button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="IconChangeColor" height="35px" width="35px"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM64 256c0-17.7 14.3-32 32-32H480c17.7 0 32 14.3 32 32s-14.3 32-32 32H96c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" id="mainIconPathAttribute" fill="#ffffff"></path></svg></button>
+                <div class="content">
+                    <a href= "fcbmspanish.html">FCBM Rankings Spanish</a>
+                    <a href="FCBMWYR edition.html">FCBM Would You Rather</a>
+                </div>
+            </div>
+        </div>
+        <div class="navbar" style = "background-color: rgba(83, 56, 23, 0.111);"></div>
+        <div class = "detail">
+            <h1>FC Bayern Munich: Top 10 Best Currently Playing Players</h1>
+            <p>Fans across the world voted to determine which FCBM player they thought was the best, and the results display who have the highest rankings!</p>
+            <p style = "font: 10px/1.231 arial,helvetica,clean,sans-serif;">PUBLISHED MAR 4, 2024</p>
+            <img class = "img" src="https://upload.wikimedia.org/wikipedia/commons/b/bf/FC_Bayern_Munchen_flag_icon.jpg"><!--Islam90, CC BY-SA 4.0 <https://creativecommons.org/licenses/by-sa/4.0>, via Wikimedia Commons-->
+            <p>
+                In celebration of FC Bayern Munich's 124th creation anniversary and their recent Bundesliga triumph, fans were asked to
+                <br> 
+                send in their votes of who their top players are, and the results were tallied in the FCBM top 10 poll from reddit's r/BayernMunich.
+            </p>
+            <p>
+                With a large variety of players to choose from, it's no surprise that many voters struggled to pick the best. However, some 
+                <br> 
+                players have stood out more to fans and enjoyers, whether through their skills, personality, or much more. The team wouldn't  
+                <br> 
+                be the same without them.</p>
+        </div>
+    
+        <div class = "rankings">
+        
+            <div class="rank-container" style="display: flex; align-items: center;">
+                <div class = "ranktitle ranknumber">10</div>
+                <h1 class = "ranktitle" style = "padding-left: 10px;">Alphonso Davies</h1>
+            </div>
+            
+            <p>
+                <span class = "blue" style = "font-weight: bold;"> FCBM's superstar left-back.</span> His <span class = "blue"> blistering pace </span> a nightmare for defenders, allowing him to surge forward
+                in attack or <span class = "blue"> effortlessly recover</span> in defense.  Davies couples this with incredible dribbling skills, making
+                him dangerous when cutting inside. His <span class = "blue"> crossing and passing accuracy</span> make him a constant creator of goalscoring
+                chances.  Beyond his offensive threat, Davies is a solid defender with a <span class = "blue"> relentless work ethic </span>that perfectly
+                embodies Bayern Munich's <span class = "blue"> winning mentality.</span>
+                
+            </p>
+    
+    
+            <div class="rank-container" style="display: flex; align-items: center;">
+                <div class = "ranktitle ranknumber">9</div><h1 class = "ranktitle" style = "padding-left: 10px;">Joshua Kimmich</h1>
+            </div>
+            
+            <p>
+                <span class = "blue" style = "font-weight: bold;"> FCBM's heartbeat of the midfield.</span> His <span class = "blue"> versatility </span>is unmatched - he commands the game as a defensive midfielder,
+                breaking up play and <span class = "blue"> dictating the tempo,</span> but can equally excel as a right-back. His passing range is exceptional,
+                allowing him to pick out teammates with <span class = "blue"> laser-like precision.</span> Kimmich's <span class = "blue"> intelligence and tactical awareness</span> make him
+                a leader on the pitch. His <span class = "blue"> tireless work ethic</span> and commitment to excellence translate directly into Bayern Munich's success.
+                
+            </p>
+    
+    
+            <div class="rank-container" style="display: flex; align-items: center;">
+                <div class = "ranktitle ranknumber">8</div><h1 class = "ranktitle" style = "padding-left: 10px;">Mathys Tel</h1>
+            </div>
+            
+            <p>
+                <span class = "blue" style = "font-weight: bold;"> FCBM's teenage French sensation.</span> His <span class = "blue"> pace and dribbling ability are electrifying,</span> constantly threatening defenses.
+                He's a clinical finisher, <span class = "blue"> possessing a composure beyond his years</span> in front of goal. Tel's versatility is a major
+                asset; he can play as a striker or a winger. His <span class = "blue"> raw talent, tactical intelligence,</span> and hunger for goals make
+                him a perfect fit for Bayern's <span class = "blue"> relentless attacking style.</span> He always brings a tremendous impact whenever he's brought 
+                onto the pitch.
+                
+            </p>
+    
+            <div class="rank-container" style="display: flex; align-items: center;">
+                <div class = "ranktitle ranknumber">7</div><h1 class = "ranktitle" style = "padding-left: 10px;">Mathijs de Ligt</h1>
+            </div>
+            
+            <p>
+                <span class = "blue" style = "font-weight: bold;"> FCBM's formidable Dutch defender.</span> He has been a rock at the heart of Bayern Munich's defense. He's known
+                for his physical strength, <span class = "blue"> exceptional tackling, and superb aerial ability,</span> allowing him to dominate duels.
+                De Ligt's positional awareness and <span class = "blue"> tactical intelligence</span> make him a commanding presence. His leadership qualities 
+                further <span class = "blue"> strengthen Bayern's backline.</span>  Moreover, his ability to build up play from the back adds<span class = "blue">  another
+                 dimension </span>to Bayern's attacks. He also has a <span class = "blue"> tendency to make tremendous goal line saves.</span>
+                
+            </p>
+    
+    
+            <div class="rank-container" style="display: flex; align-items: center;">
+                <div class = "ranktitle ranknumber">6</div><h1 class = "ranktitle" style = "padding-left: 10px;">Leroy Sané</h1>
+            </div>
+            
+            <p>
+                <span class = "blue" style = "font-weight: bold;"> FCBM's brilliant German winger.</span> His <span class = "blue"> blistering speed</span> allows him to tear past defenders and create space for himself
+                or his teammates. Sané's <span class = "blue"> dribbling is mesmerizing,</span> and his ability to cut inside and unleash powerful shots makes
+                him a prolific goalscorer. He has a <span class = "blue"> keen eye for a pass</span> and his creativity in the final third unlocks even the most
+                stubborn defenses. He is currently having a <span class = "blue"> monster season, and has many assists and goals</span> to his name. Sané's dynamic
+                style and <span class = "blue"> attacking flair</span> make him a vital attacking weapon for Bayern Munich.
+                
+            </p>
+    
+    
+            <div class="rank-container" style="display: flex; align-items: center;">
+                <div class = "ranktitle ranknumber">5</div><h1 class = "ranktitle" style = "padding-left: 10px;">Thomas Müller</h1>
+            </div>
+            
+            <p>
+                <span class = "blue" style = "font-weight: bold;"> FCBM's veteran star.</span> His uncanny ability to find and <span class = "blue"> exploit space between defenders</span> makes him a constant goal threat.
+                Müller's movement off the ball is <span class = "blue"> unmatched,</span> always finding positions where he can influence the game. THis is caused him to have broken multiple records, 
+                including having some of the <span class = "blue"> highest assist numbers</span> in the history of the sport. His <span class = "blue"> tactical intelligence, tireless work rate, </span>and ability to link play
+                seamlessly with teammates make him the heart of Bayern's attack. 
+                
+            </p>
+    
+    
+            <div class="rank-container" style="display: flex; align-items: center;">
+                <div class = "ranktitle ranknumber">4</div><h1 class = "ranktitle" style = "padding-left: 10px;">Jamal Musiala</h1>
+            </div>
+            
+            <p>
+                <span class = "blue" style = "font-weight: bold;"> FCBM's young German attacking sensation.</span> He has become a key figure for Bayern Munich, with his exceptional dribbling
+                skills, close control, and ability to <span class = "blue"> ghost past defenders</span> which make him a nightmare for opposing teams. Musiala
+                possesses remarkable vision, finding incisive passes to <span class = "blue"> unlock defenses and create scoring chances.</span> He's incredibly <span class = "blue"> versatile,</span>
+                operating as a winger, attacking midfielder, or even a second striker. Musiala's goal threat and tactical intelligence make him
+                a vital asset to Bayern's <span class = "blue"> relentless attacking style,</span> and his potential seems limitless.
+                
+            </p>
+    
+    
+            <div class="rank-container" style="display: flex; align-items: center;">
+                <div class = "ranktitle ranknumber">3</div><h1 class = "ranktitle" style = "padding-left: 10px;">Kim Min-jae</h1>
+            </div>
+            
+            <p>
+                
+                <span class = "blue" style = "font-weight: bold;"> FCBM's center-back powerhouse.</span> He has become a formidable anchor for Bayern Munich's defense. His nickname "The Monster"
+                is fitting; he's <span class = "blue"> physically dominant, winning aerial duels</span> and crunching into tackles. Kim's composure on the ball allows
+                him to <span class = "blue"> play out from the back</span> with precision. His reading of the game is superb, often nullifying out opposition attacks
+                before they develop. Kim Min-jae's presence <span class = "blue"> solidifies Bayern's defense,</span> making him a significant asset to one of the world's
+                top clubs.
+                
+            </p>
+    
+            <div class="rank-container" style="display: flex; align-items: center;">
+                <div class = "ranktitle ranknumber">2</div><h1 class = "ranktitle" style = "padding-left: 10px;">Manuel Neuer</h1>
+            </div>
+            
+            <p>
+                <span class = "blue" style = "font-weight: bold;"> FCBM's goalkeeping icon.</span> His dominance in the penalty area, paired with his anticipation and <span class = "blue"> speed off his line,</span>
+                make him a <span class = "blue"> "sweeper-keeper,"</span> extending his influence far beyond the goal.  Neuer's exceptional foot skills allow
+                him to initiate attacks with <span class = "blue"> pinpoint passing and distribution.</span> His ability to nullify threats, command his defense,
+                and even take penalties solidifies him as an <span class = "blue"> irreplaceable leader for Bayern Munich.</span> Neuer's unique blend of traditional
+                goalkeeping with aggressive, proactive play makes him one of the <span class = "blue"> greatest goalkeepers of all time.</span>
+                
+            </p>
+    
+    
+            <div class="rank-container" style="display: flex; align-items: center;">
+                <div class = "ranktitle ranknumber">1</div><h1 class = "ranktitle" style = "padding-left: 10px;">Harry Kane</h1>
+            </div>
+            
+            <p>
+                <span class = "blue" style = "font-weight: bold;"> FCBM's English super-signing.</span> He is the replacement striker for Robert Lewandowski that FCBM desperately needed, if not better. 
+                He's a <span class = "blue"> clinical finisher and prolific goalscorer,</span> with lethal instincts inside the box and powerful shots from distance. His link-up play is exceptional,
+                allowing him to drop deep and creatively feed teammates. Kane's <span class = "blue"> leadership and work ethic</span> are an immediate boost for the team.
+                His ability to score from a variety of positions and create chances for others makes him the perfect <span class = "blue"> spearhead of Bayern's attack.</span> 
+                He has truly been thriving at FCBM, with a jaw-dropping <span class = "blue"> 35+ goals and assists in just 32 matches</span> in his first season. 
+                
+            </p>
+
+            
+        
+        </div>
+    </div>
+
+    <script>
+        function openmenu(){
+            var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
+            if (screenWidth > 800) { 
+                document.querySelector('.sidebar').style.width = '27%';
+            } else {
+                document.querySelector('.sidebar').style.width = '100%';
+            }
+        }
+    </script>
+</body>
+</html>

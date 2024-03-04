@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Would You Rather: MCFC Edition</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Langar&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Langar&family=Protest+Riot&display=swap" rel="stylesheet">
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5377085184392554"
+     crossorigin="anonymous"></script>
+
+    <style> 
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-style: normal;
+        height: 100vh;
+    }
+
+    h1 { 
+            font-size: 2.75rem;
+        }
+    p {
+            font-size: 1.25rem; 
+        }
+
+    .navbar{ 
+            position: fixed; 
+            top: 0; 
+            width: 100%;
+            box-sizing: border-box;
+            background-color: #20232b;
+            padding: 10px; 
+            display: flex;
+            font-family: "Anton", sans-serif;
+            font-weight: 100;
+            color: white;
+            border: 5px solid #FFC659;
+            letter-spacing: 2px;
+            justify-content: space-between;
+            z-index: 1000; 
+            box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+            align-items: center;
+    }
+
+    .navbar img {
+            height: 30px;
+            width: 30px;
+        }
+
+    .container {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    /*for mobile phones, etc (smaller screens)*/
+    .choices {
+        box-sizing: border-box;
+        height: 50vh; 
+        text-align: center;
+        display: flex;
+        flex-direction: column; 
+        font-weight: 100;
+        color: white;
+        letter-spacing: 2px;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px; 
+        width: 100%; 
+    }
+
+    @media screen and (min-width: 600px){
+        .choices:hover span {
+        transform: scale(1.2);
+        transition: transform 0.5s ease;
+        }   
+    }
+    .choices span {
+        width: 60%;
+        transition: transform 0.5s ease; 
+    }
+
+    .red { 
+        background-color: #6CABDD;
+        font-family: 'Protest Riot', sans-serif;
+        cursor: pointer;
+        color: black;
+    }
+    
+    @media screen and (min-width: 600px){
+        .red:hover span{ 
+        transform: scale(1.2);
+        transition: transform 0.5s ease;
+        }
+    }
+
+    .blue { 
+        background-color: #1C2C5B;
+        font-family: 'Langar', sans-serif;
+        cursor: pointer;
+    }
+
+    @media screen and (min-width: 600px) {
+        .blue:hover span{ 
+        transform: scale(1.2);
+        transition: transform 0.5s ease;
+        }   
+    }
+
+
+    .midline { 
+        display: flex; 
+        height: 0.5%; 
+        background-color: white; 
+    }
+
+    .dropdown {
+        display: inline-block;
+        font-family: 'Protest Riot', sans-serif;
+    }
+    .dropdown button{
+            background-color: #20232b;
+            color: white;
+            border: none;
+            cursor: pointer;
+    }
+    .dropdown a{
+            display: block;
+            color: black;
+            text-decoration: none;
+            padding: 10px 15px;
+    }
+    .dropdown .content {
+            display: none;
+            position: absolute;
+            background-color: hsl(0, 0%, 95%);
+            min-width: 10px; 
+            box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+            right: 0; 
+    }
+
+    .dropdown:hover .content {
+            display: block;
+    }
+    .dropdown:hover button{
+            box-shadow: 0 0 5px white,
+           0 0 10px lightskyblue, 0 0 15px lightskyblue,
+           0 0 20px lightskyblue, 0 0 25px lightskyblue,
+           0 0 30px lightskyblue;
+            
+    }
+    .dropdown a:hover{
+            color: white;
+            background-color: #333;
+        }
+
+    /*for desktops, laptops, etc (larger screens)*/
+    @media screen and (min-width: 600px){
+            .choices {
+                font-size: 50px; 
+                height: 100vh; 
+            }
+            .container {
+                flex-direction: row; 
+            }
+            .midline {
+                display: flex; 
+                width: 0.5%; 
+                background-color: white;
+            }
+    }
+
+    /*left menu*/
+    .sidebar {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #333;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 10px;
+        box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+        }
+
+        .sidebar ul {
+        list-style-type: none;
+        padding: 0;
+        }
+
+
+        .sidebar ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 125%;
+        }
+
+        @media screen and (min-width: 800px) {
+            .sidebar ul li a {
+                font-size: 100%;
+            }
+            
+        }
+
+        .sidebar ul li a:hover {
+        text-decoration: underline rgb(255, 166, 0);
+        }
+
+        .close {
+        text-align: right;
+        }
+
+        .closebutton {
+        color: #fff;
+        font-size: 60px;
+        cursor: pointer;
+        padding-right: 10%;
+        }
+
+        .content {
+        flex-grow: 1;
+        padding: 20px;
+        }
+
+    </style>
+
+
+</head>
+<body>
+
+    <nav class="navbar" style = "font-size: 25px;">
+        <div class="navbar-left">
+            <div class="dropdown">
+                <div class="sidebar">
+                    <div class="close">
+                      <span class="closebutton" onclick="document.querySelector('.sidebar').style.width = '0'">&times;</span>
+                    </div>
+                    <ul style = "padding-left: 7%;">
+                        <li><a href = "index.html"style = "text-decoration: underline orange;">Home</a></li>
+                          <br>
+
+                          <li><a style="text-decoration: underline orange;">Rankings</a></li>
+                          <li><a href= "fcb.html">- FC Barcelona</a></li>
+                          <!--<li><a href= "fcbspanish.html">- FC Barcelona (Spanish)</a></li>-->
+                          <li><a href= "rm.html">- Real Madrid CF</a></li>
+                          <!--<li><a href= "rmspanish.html">- Real Madrid CF (Spanish)</a></li>-->
+                          <li><a href= "mc.html">- Manchester City FC</a></li>
+                          <!--<li><a href= "mcspanish.html">- Manchester City FC (Spanish)</a></li>-->
+                          <li><a href= "fcbm.html">- FC Bayern Munich</a></li>
+                          <!--<li><a href= "fcbmgerman.html">- FC Bayern Munich (German)</a></li>-->
+
+                          <br>
+                          <li><a style="text-decoration: underline orange;">Would You Rather</a></li>
+                          <li><a href= "FCBWYR edition.html">- FCB Edition</a></li>
+                          <li><a href= "RMWYR edition.html">- RMCF Edition</a></li>
+                          <li><a href= "MCWYR edition.html">- MCFC Edition</a></li>
+                          <li><a href= "FCBMWYR edition.html">-  FCBM Edition</a>
+                        </li>
+  
+                        
+                    </ul>
+                </div>
+                <button><img src = "lmenu.svg" height="35px" width="35px" onclick="openmenu()"></button>
+            </div> 
+        </div>
+        <div class="navbar-middle"> 
+            <span style = "font-size: 15px;">Manchester City FC Edition</span>
+        </div>
+        <div class="navbar-right"> 
+            <div class="dropdown">
+                <button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="IconChangeColor" height="25px" width="25px"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM64 256c0-17.7 14.3-32 32-32H480c17.7 0 32 14.3 32 32s-14.3 32-32 32H96c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" id="mainIconPathAttribute" fill="#ffffff"></path></svg></button>
+                <div class="content">
+                    <a href= "mc.html">MCFC Rankings English</a>
+                    <a href= "mcspanish.html">MCFC Rankings Spanish</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="choices red" id = "option1"> 
+            <span id = "leftstatement">Have Haaland in the team but not De Bruyne</span>
+            <br>
+            <span style = "color: white" id = "percentleft"></span>
+        </div>
+        <div class="midline"></div>
+        <div class="choices blue" id = "option2">
+            <span id = "rightstatement">Have De Bruyne in the team but not Haaland</span>
+            <br>
+            <span style = "color:#EDBB00" id= "percentright"></span>
+        </div>
+    </div>
+
+
+    <script>
+
+        /*for the left side menu*/
+        function openmenu(){
+            var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
+            if (screenWidth > 800) { 
+                document.querySelector('.sidebar').style.width = '27%';
+            } else {
+                document.querySelector('.sidebar').style.width = '100%';
+            }
+        }
+
+        /*for the statements and the percentages*/
+        const statementsleft = [
+            "Win the Premier League with Man City",
+            "Have Rodri's goal-scoring ability",
+            "Have Aguero back in the team but not Haaland",
+            "Be Ruben Dias's defensive partner",
+            "Have Jeremy Doku's dribbling in game",
+            "Have John Stones's versatility",
+            "Be Erling Haaland's height (6'4')",
+            "Exit the UCL in the group stage",
+            "Beat Liverpool in a crucial game",
+            "Play Jack Grealish",
+            "Have prime Sergio Aguero in the team",
+            "Have Haaland at the striker position",
+            "Only score 1 goal per game but win every game",
+            "Sell Nathan Ake",
+            "Bench Phil Foden",
+            "Have the 2020-2021 Man City team",
+            "Have a striker score 5 goals in a single game",
+            "Have Josko Gvardiol at center-back",
+            "Be MCFC's best player but never win a trophy",
+            "Have Haaland in the team but not De Bruyne"
+        ];
+    
+        const statementsright = [
+            "Win the Champions League with Man City",
+            "Have Kevin De Bruyne's soccer IQ",
+            "Have Haaland but not Aguero",
+            "Be Rodri's midfield partner",
+            "Have Julian Alvarez's intelligent runs in game",
+            "Have Phil Foden's flair",
+            "Be Josko Gvardiol's age (22 years)",
+            "Lose out on the Premier League by 1 point",
+            "Beat Manchester United in a crucial game",
+            "Play Jeremy Doku",
+            "Have prime Yaya Toure in the team",
+            "Have Alvarez at the striker position",
+            "Score 5+ goals per game but never win a game",
+            "Sell Kyle Walker",
+            "Bench Kevin De Bruyne",
+            "Have the 2022-2023 Man City team",
+            "Have a defender score 5 goals in a single game",
+            "Have Manuel Akanji at center-back",
+            "Be MCFC's worst player but win a trophy every season",
+            "Have De Bruyne in the team but not Haaland"
+            
+        ];
+    
+        const leftpercents = [
+            "15.1%",
+            "53.4%",
+            "1.4%",
+            "26%",
+            "38.4%",
+            "65.8%",
+            "64.4%",
+            "67.6%",
+            "59.5%",
+            "54.1%",
+            "68.9%",
+            "45.9%",
+            "97.3%",
+            "98.6%",
+            "13.5%",
+            "89.2%",
+            "9.5%",
+            "44.6%",
+            "56.8%",
+            "18.9%"
+              
+        ]
+        const rightpercents = [
+            "84.9%",
+            "46.6%",
+            "98.6%",
+            "74%",
+            "61.6%",
+            "34.2%",
+            "35.6%",
+            "32.4%",
+            "40.5%",
+            "45.9%",
+            "31.1%",
+            "54.1%",
+            "2.7%",
+            "1.4%",
+            "86.5%",
+            "10.8%",
+            "90.5%",
+            "55.4%",
+            "43.2%",
+            "81.1%"
+        ]
+        const statement1 = document.getElementById('leftstatement');
+        const statement2 = document.getElementById('rightstatement');
+        const op1 = document.getElementById('option1')
+        const op2 = document.getElementById('option2')
+    
+        let clickCount = 0;
+        let index = 0;
+    
+
+        op1.addEventListener('click', function() {
+            clickCount++;
+
+            if(clickCount === 1){
+                document.getElementById('percentleft').textContent = leftpercents[index];
+                document.getElementById('percentright').textContent = rightpercents[index];
+            }
+    
+            if (clickCount === 2) {
+                document.getElementById('leftstatement').textContent = statementsleft[index];
+                document.getElementById('percentleft').textContent = "";
+                document.getElementById('rightstatement').textContent = statementsright[index];
+                document.getElementById('percentright').textContent = "";
+    
+                clickCount = 0;
+                
+                if (index >= 19) {
+                    index = 0;
+                } 
+                else {
+                    index++;
+                }
+            }
+
+    
+            });
+
+        
+        op2.addEventListener('click', function() {
+            clickCount++;
+
+            if(clickCount === 1){
+                document.getElementById('percentleft').textContent = leftpercents[index];
+                document.getElementById('percentright').textContent = rightpercents[index]; 
+            }
+    
+            if (clickCount === 2) {
+                document.getElementById('leftstatement').textContent = statementsleft[index];
+                document.getElementById('percentleft').textContent = "";
+                document.getElementById('rightstatement').textContent = statementsright[index];
+                document.getElementById('percentright').textContent = "";
+    
+                clickCount = 0;
+
+                if (index >= 19) {
+                    index = 0;
+                } 
+                else {
+                    index++;
+                }
+            }
+    
+            
+    
+            });
+    </script>
+</body>
+</html>

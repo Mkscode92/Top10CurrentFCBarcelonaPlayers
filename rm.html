@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Madrid CF: Top 10 Best Currently Playing Players</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@500&family=Vina+Sans&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Langar&family=Protest+Riot&display=swap" rel="stylesheet">
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5377085184392554"
+     crossorigin="anonymous"></script>
+
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Rajdhani", sans-serif;
+            font-weight: 600;
+            font-style: normal;
+            background: #f8f8f8;
+            
+
+        }
+
+        h1 { 
+            font-size: 2.75rem;
+        }
+        p {
+            font-size: 1.25rem; 
+        }
+
+        .background { 
+            background: #f8f8f8;
+            width: 100%;
+            height: 100%;
+            
+        }
+
+        /*navbar*/
+        .navbar {
+            background-color: #20232b;
+            color: white;
+            padding: 20px;
+            align-items: center;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            font-family: "Anton", sans-serif;
+            font-weight: 100;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .navbar img {
+            height: 20px;
+            width: 20px;
+        }
+
+        .img {
+            
+            height: 50%;
+            width: 90%;
+            box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);     
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+
+        @media screen and (min-width: 600px){
+            .navbar img {
+                height: 30px;
+                width: 30px;
+            }
+            .navbar a {
+                color: white;
+                text-decoration: none;
+                margin: 0 25px;
+            }
+        }
+
+        .dropdown{
+            display: inline-block;
+            font-family: 'Protest Riot', sans-serif; 
+        }
+        .dropdown button{
+            background-color: #20232b;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-left: auto;
+        }
+        .dropdown a{
+            display: block;
+            color: black;
+            text-decoration: none;
+            padding: 10px 15px;
+        }
+        .dropdown .content{
+            display: none;
+            position: absolute;
+            background-color: hsl(0, 0%, 95%);
+            min-width: 10px;
+            box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+            right: 0;
+        }
+
+        .dropdown .content1{
+            left: 0;
+        }
+        .dropdown .content2{
+            right: 0;
+        }
+
+        .dropdown:hover .content{
+            display: block;
+            
+        }
+        .dropdown:hover button{
+            box-shadow: 0 0 5px white,
+           0 0 10px lightskyblue, 0 0 15px lightskyblue,
+           0 0 20px lightskyblue, 0 0 25px lightskyblue,
+           0 0 30px lightskyblue;
+            
+        }
+        .dropdown a:hover{
+            color: white;
+            background-color: #333;
+        }
+
+        /*top portion*/
+        .detail { 
+            padding-left: 13%; 
+            width: 85%;
+            color: #333132;
+            
+        }
+        
+        .detail p {
+            font-family: "Georgia", sans-serif;
+            font-weight:100;
+           
+        }
+
+        /*left menu*/
+        .sidebar {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #333;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 10px;
+        box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+        }
+
+        .sidebar ul {
+        list-style-type: none;
+        padding: 0;
+        }
+
+        
+
+        .sidebar ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 125%;
+        }
+
+        @media screen and (min-width: 800px) {
+            .sidebar ul li a {
+                font-size: 100%;
+            }
+            
+        }
+
+        .sidebar ul li a:hover {
+            text-decoration: underline rgb(255, 166, 0);
+        }
+
+        .close {
+        text-align: right;
+        }
+
+        .closebutton {
+            color: #fff;
+            font-size: 60px;
+            cursor: pointer;
+            padding-right: 10%;
+        }
+
+        .content {
+        flex-grow: 1;
+        padding: 20px;
+        }
+
+        
+        /*bottom portion*/
+
+        .rankings {
+            padding-left: 13%;
+            width: 80%;
+            color: #333132;
+            
+        }
+
+        @media screen and (min-width: 600px) {
+            .rankings {
+                padding-left: 13%;
+                width: 70%;
+                color: #333132; 
+            }
+        }
+        
+        .rankings p{
+            font-family: "Georgia", sans-serif;
+            font-weight:100;
+            border: 2px solid black;
+            border-radius: 25px;
+            padding: 20px;
+            box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+            line-height: 2;
+            background-color: white;
+            
+        }
+        .ranktitle { 
+            display: inline;
+            
+        }
+        .ranknumber { 
+            background-color: #00529F;/*#EE324E;*/
+            justify-content: center;
+            align-items: center;
+            height: 40px;
+            width: 40px;
+            display: flex;
+            color: white;
+            font-weight: 300px;
+            padding:5px;
+            font-size:35px;
+            box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+        }    
+        
+        .blue {
+            color: #3557ff;
+        }
+    </style>
+</head>
+<body>
+    <div class = "background">
+        <div class="navbar" style = "font-size: 25px;">
+            <div class="navbar-left"> 
+                <div class="dropdown">
+                    <div class="sidebar">
+                        <div class="close">
+                          <span class="closebutton" onclick="document.querySelector('.sidebar').style.width = '0%'">&times;</span>
+                        </div>
+                        <ul>
+                          <li><a href = "index.html"style = "text-decoration: underline orange;">Home</a></li>
+                          <br>
+
+                          <li><a style="text-decoration: underline orange;">Rankings</a></li>
+                          <li><a href= "fcb.html">- FC Barcelona</a></li>
+                          <!--<li><a href= "fcbspanish.html">- FC Barcelona (Spanish)</a></li>-->
+                          <li><a href= "rm.html">- Real Madrid CF</a></li>
+                          <!--<li><a href= "rmspanish.html">- Real Madrid CF (Spanish)</a></li>-->
+                          <li><a href= "mc.html">- Manchester City FC</a></li>
+                          <!--<li><a href= "mcspanish.html">- Manchester City FC (Spanish)</a></li>-->
+                          <li><a href= "fcbm.html">- FC Bayern Munich</a></li>
+                          <!--<li><a href= "fcbmgerman.html">- FC Bayern Munich (German)</a></li>-->
+
+                          <br>
+                          <li><a style="text-decoration: underline orange;">Would You Rather</a></li>
+                          <li><a href= "FCBWYR edition.html">- FCB Edition</a></li>
+                          <li><a href= "RMWYR edition.html">- RMCF Edition</a></li>
+                          <li><a href= "MCWYR edition.html">- MCFC Edition</a></li>
+                          <li><a href= "FCBMWYR edition.html">-  FCBM Edition</a></li>
+                        </ul>
+                    </div>
+                    <button><img src = "lmenu.svg" onclick="openmenu()" style = "height: 30px; width: 30px;"></button>
+                </div>
+            </div>
+            <div class="navbar-middle" style = "margin-left: 10px;">
+                <a title="Blackcat, CC BY-SA 3.0 &lt;https://creativecommons.org/licenses/by-sa/3.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Association_football_ball_with_HEX-1AC66B_background.svg"><img width="256" alt="Association football ball with HEX-1AC66B background" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Association_football_ball_with_HEX-1AC66B_background.svg/256px-Association_football_ball_with_HEX-1AC66B_background.svg.png"></a>
+                Soccer Ranker
+                <a title="Blackcat, CC BY-SA 3.0 &lt;https://creativecommons.org/licenses/by-sa/3.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Association_football_ball_with_HEX-1AC66B_background.svg"><img width="256" alt="Association football ball with HEX-1AC66B background" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Association_football_ball_with_HEX-1AC66B_background.svg/256px-Association_football_ball_with_HEX-1AC66B_background.svg.png"></a>
+            </div>
+            <div class="dropdown">
+                <button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="IconChangeColor" height="35px" width="35px"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM64 256c0-17.7 14.3-32 32-32H480c17.7 0 32 14.3 32 32s-14.3 32-32 32H96c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" id="mainIconPathAttribute" fill="#ffffff"></path></svg></button>
+                <div class="content" style="max-width: fit-content;">
+                    <a href= "rmspanish.html">RM Rankings Spanish</a>
+                    <a href="RMWYR edition.html">RM Would You Rather</a>
+                </div>
+            </div>
+        </div>
+        <div class="navbar" style = "background-color: rgba(83, 56, 23, 0.111);"></div>
+        <div class = "detail">
+            <h1>Real Madrid CF: Top 10 Best Currently Playing Players</h1>
+            <p>Fans across the world voted to determine which RMCF player they thought was the best, and the results display who have the highest rankings!</p>
+            <p style = "font: 10px/1.231 arial,helvetica,clean,sans-serif;">PUBLISHED MAR 4, 2024</p>
+            <img class = "img" src="clubmadrid.png">
+            <p>
+                In celebration of Real Madrid CF's 122nd creation anniversary and their recent Supercopa de España triumph, fans were asked to
+                <br> 
+                send in their votes of who their top players are, and the results were tallied in the RMCF top 10 poll from reddit's r/realmadrid.
+            </p>
+            <p>
+                With a large variety of players to choose from, it's no surprise that many voters struggled to pick the best. However, some 
+                <br> 
+                players have stood out more to fans and enjoyers, whether through their skills, personality, or much more. The team wouldn't be 
+                <br> 
+                the same without them.</p>
+        </div>
+    
+        <div class = "rankings">
+        
+            <div class="rank-container" style="display: flex; align-items: center;">
+                <div class = "ranktitle ranknumber">10</div>
+                <h1 class = "ranktitle" style = "padding-left: 10px;">Brahim Díaz</h1>
+            </div>
+            
+            <p>
+                <span class = "blue" style = "font-weight: bold;"> RMCF's spanish star with immense potential.</span> His technical brilliance on the ball makes him a joy
+                to watch. He possesses <span class = "blue"> remarkable close control, dribbling ability, and the vision</span> to unlock defenses
+                with creative passes. Diaz is <span class = "blue"> versatile,</span> comfortable playing as an attacking midfielder, a winger,
+                or in a slightly deeper role. Despite his young age, he has shown <span class = "blue"> maturity and composure</span> when in
+                possession. While still developing, Diaz's <span class = "blue"> talent and adaptability</span>  make him a <span class = "blue"> valuable asset</span>
+                to Real Madrid's attacking arsenal for years to come.
+                
+            </p>
+    
+    
+            <div class="rank-container" style="display: flex; align-items: center;">
+                <div class = "ranktitle ranknumber">9</div><h1 class = "ranktitle" style = "padding-left: 10px;">Antonio Rüdiger</h1>
+            </div>
+            
+            <p>
+                <span class = "blue" style = "font-weight: bold;"> RMCF's powerful and aggressive center-back.</span> He is known for his strength in tackles and dominance in the air.
+                His arrival at Real Madrid has bolstered their defense, making him a <span class = "blue"> formidable obstacle for attackers</span> to
+                overcome. Rüdiger's <span class = "blue"> physicality and fearless attitude</span> instill a sense of confidence in the backline. His
+                pace is also an asset, allowing him to <span class = "blue"> recover quickly</span> in counterattacking situations. While occasionally
+                prone to rash decisions, his <span class = "blue"> overall impact</span> on Real Madrid's defense has been <span class = "blue"> undeniably positive.</span>
+            </p>
+    
+    
+            <div class="rank-container" style="display: flex; align-items: center;">
+                <div class = "ranktitle ranknumber">8</div><h1 class = "ranktitle" style = "padding-left: 10px;">Rodrygo</h1>
+            </div>
+            
+            <p>
+                <span class = "blue" style = "font-weight: bold;"> RMCF's young Brazilian sensation.</span> He is a vital asset to Real Madrid due to his unpredictable attacking flair and
+                clutch performances. He possesses <span class = "blue"> excellent technical skills,</span> allowing him to dribble past defenders and create
+                scoring opportunities. Rodrygo's composure in front of goal is remarkable, and he has a <span class = "blue"> tendency for scoring crucial
+                goals in big matches,</span> like his 2 goals in rapid succession against Manchester City in the semi-finals of the UCL in 2022.
+                And with his <span class = "blue"> youthful energy and fearlessness</span> on the pitch he makes himself a constant threat that provides a <span class = "blue"> spark to the
+                Real Madrid attack.</span> A true Real Madrid gem.
+                
+            </p>
+    
+            <div class="rank-container" style="display: flex; align-items: center;">
+                <div class = "ranktitle ranknumber">7</div><h1 class = "ranktitle" style = "padding-left: 10px;">Daniel Carvajal</h1>
+            </div>
+            
+            <p>
+                
+                <span class = "blue" style = "font-weight: bold;"> RMCF's rock-solid right-back.</span> A determined defender, his tackling and positional awareness
+                often shut down attacks. Going forward, Carvajal is an <span class = "blue"> outstanding attacking threat.</span>  His <span class = "blue"> pinpoint crossing,</span>
+                intelligent <span class = "blue"> overlapping runs,</span> and link-up play with wingers create <span class = "blue"> numerous scoring chances.</span> Carvajal's
+                consistency and reliability are <span class = "blue"> cornerstones of Real Madrid's success.</span> His defensive solidity and attacking
+                contributions make him an <span class = "blue"> indispensable player</span> for the team.
+                
+            </p>
+    
+    
+            <div class="rank-container" style="display: flex; align-items: center;">
+                <div class = "ranktitle ranknumber">6</div><h1 class = "ranktitle" style = "padding-left: 10px;">Eduardo Camavinga</h1>
+            </div>
+            
+            <p>
+                <span class = "blue" style = "font-weight: bold;"> RMCF's dynamic French midfielder.</span> He's a powerful presence in midfield, combining <span class = "blue"> relentless energy</span> with phenomenal
+                ball control and dribbling skills.  His <span class = "blue"> versatility</span> is a major asset; Camavinga has excelled not only as a <span class = "blue"> central
+                midfielder</span> but also as a defensive midfielder and even at left-back. This <span class = "blue"> adaptability,</span> coupled with his ability to
+                break up opposition attacks and <span class = "blue"> smoothly transition</span> into Madrid's offense, makes him invaluable. Camavinga possesses
+                maturity beyond his years and is undoubtedly a <span class = "blue"> cornerstone of Real Madrid's future.</span>
+                
+            </p>
+    
+    
+            <div class="rank-container" style="display: flex; align-items: center;">
+                <div class = "ranktitle ranknumber">5</div><h1 class = "ranktitle" style = "padding-left: 10px;">Aurélien Tchouaméni</h1>
+            </div>
+            
+            <p>
+                <span class = "blue" style = "font-weight: bold;"> RMCF's powerhouse of a defensive midfielder.</span> His <span class = "blue"> defensive prowess</span> is extraordinary; his ability to read the game,
+                intercept passes, and win <span class = "blue"> tackles disrupts even the most potent attacks.</span> Tchouaméni's passing is accurate and
+                intelligent, allowing him to <span class = "blue"> dictate play from deep.</span> His physicality and <span class = "blue"> composure under pressure,</span> especially for
+                a young player, are impressive. He is also great at making <span class = "blue"> long shots,</span> which often also result in goals.
+                He seamlessly fills the defensive midfield role vacated by the <span class = "blue"> legendary Casemiro,</span> making him a priceless
+                addition to Real Madrid's squad.
+                
+            </p>
+    
+    
+            <div class="rank-container" style="display: flex; align-items: center;">
+                <div class = "ranktitle ranknumber">4</div><h1 class = "ranktitle" style = "padding-left: 10px;">Federico Valverde</h1>
+            </div>
+            
+            <p>
+                <span class = "blue" style = "font-weight: bold;"> RMCF's energetic Uruguayan midfielder.</span> His relentless play and <span class = "blue"> box-to-box dynamism</span> make him a force
+                to be reckoned with in midfield. Valverde's <span class = "blue"> technical skills</span> are impressive, with his ability to dribble past
+                defenders and unleash powerful shots. His <span class = "blue"> tactical intelligence and work ethic</span> off the ball are equally valuable,
+                ensuring Real Madrid maintain a balanced shape. Valverde's <span class = "blue"> versatility to play multiple midfield roles</span> and even at
+                right back adds immense value. He embodies Real Madrid's spirit, making him a <span class = "blue"> fan favorite</span> and a key player for years to come.
+                 
+            </p>
+    
+    
+            <div class="rank-container" style="display: flex; align-items: center;">
+                <div class = "ranktitle ranknumber">3</div><h1 class = "ranktitle" style = "padding-left: 10px;">Toni Kroos</h1>
+            </div>
+            
+            <p>
+                <span class = "blue" style = "font-weight: bold;"> RMCF's midfield maestro.</span> His vision and passing range are unmatched, allowing him to <span class = "blue"> dictate the tempo</span> of the game
+                with pinpoint accuracy. His technical ability and <span class = "blue"> composure under pressure are exceptional,</span> making him the conductor
+                of Madrid's attack. Kroos's <span class = "blue"> tactical intelligence</span> is also crucial; his positioning and movement off the ball create
+                space and opportunities for his teammates. With his <span class = "blue"> ability to control the game's pace</span> and orchestrate attacks, Kroos
+                is the <span class = "blue"> heartbeat of Real Madrid's midfield.</span>
+                
+            </p>
+    
+            <div class="rank-container" style="display: flex; align-items: center;">
+                <div class = "ranktitle ranknumber">2</div><h1 class = "ranktitle" style = "padding-left: 10px;">Vinicius Junior</h1>
+            </div>
+            
+            <p>
+                <span class = "blue" style = "font-weight: bold;"> RMCF's Brazilian superstar.</span> He has become a talisman for Real Madrid. His <span class = "blue"> explosive pace</span> and electrifying dribbling
+                skills make him a nightmare for defenders.  Vinicius Jr.'s <span class = "blue"> confidence and flair</span> on the ball are sublime, and he has a
+                tendency for <span class = "blue"> creating goalscoring opportunities out of nothing.</span> Though his finishing was once a weakness, he has developed
+                into a clinical goalscorer, adding another dimension to his already <span class = "blue"> potent attacking threat.</span> Vinicius Junior is a game-changer,
+                electrifying crowds and <span class = "blue"> instrumental in Real Madrid's success.</span> And as a left-winger, he has <span class = "blue"> cemented his place</span> in that position with 
+                his unmatched, ballon d'or level skill. 
+                
+            </p>
+    
+    
+            <div class="rank-container" style="display: flex; align-items: center;">
+                <div class = "ranktitle ranknumber">1</div><h1 class = "ranktitle" style = "padding-left: 10px;">Jude Bellingham</h1>
+            </div>
+            
+            <p>
+                <span class = "blue" style = "font-weight: bold;"> RMCF's English super-signing.</span> At first, with his high, 100+ million buying price, fans had their doubts on his ability.
+                But now that time has passed, he has truly became the <span class = "blue"> signing of the season</span> for Real Madrid and the whole of soccer. 
+                His all-around excellence makes him a <span class = "blue"> complete midfielder.</span> He possesses incredible technical ability, effortlessly
+                controlling the ball, dribbling past defenders, and <span class = "blue"> finding killer passes.</span> Bellingham is a dynamic box-to-box player,
+                <span class = "blue"> contributing defensively</span> with relentless work rate and <span class = "blue"> contributing offensively with his vision and goal threat.</span> But what truly highlights
+                his masterclass performances is his<span class = "blue">  goal scoring ability as a midfielder.</span> It is truly phenomenal to be the top scorer of La Liga at such a position, and 
+                is <span class = "blue"> reminiscent of great midfielders like Zinedane Zidane.</span> His maturity and leadership qualities at such a young age also mark him as a <span class = "blue"> future superstar,</span>
+                making him the perfect <span class = "blue"> centerpiece for Real Madrid's midfield</span> for years to come.
+                
+            </p>
+
+            <div class="rank-container" style="display: flex; align-items: center;">
+                <div class = "ranktitle ranknumber" style = "background-color: #FFD700;">✹</div><h1 class = "ranktitle" style = "padding-left: 10px;">Honorable Mention: Kylian Mbappé</h1>
+            </div>
+            
+            <p>
+                While he is still not an official Real Madrid player, he sure seems to be <span class = "blue">madrid-bound</span> this summer.
+                With his <span class = "blue">world class</span> performances at PSG and in the France national team, he is truly a <span class = "blue">force to 
+                be reckoned with</span> once he goes to RM. He is known for his <span class = "blue">exceptional speed, dribbling ability, 
+                and finishing in attack</span> - which will be key for RM's style of play. He is a <span class = "blue">remarkable</span> player, 
+                and truly has the skillsets of those of the <span class = "blue">greatest soccer players</span> to ever play in the <span class = "blue">history</span>
+                of the sport.
+                  
+            </p>
+        </div>
+    </div>
+
+    <script>
+        function openmenu(){
+            var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
+            if (screenWidth > 800) { 
+                document.querySelector('.sidebar').style.width = '27%';
+            } else {
+                document.querySelector('.sidebar').style.width = '100%';
+            }
+        }
+    </script>
+</body>
+</html>

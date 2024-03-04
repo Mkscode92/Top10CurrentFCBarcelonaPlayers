@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manchester City FC: Top 10 Best Currently Playing Players</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@500&family=Vina+Sans&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Langar&family=Protest+Riot&display=swap" rel="stylesheet">
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5377085184392554"
+     crossorigin="anonymous"></script>
+
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Rajdhani", sans-serif;
+            font-weight: 600;
+            font-style: normal;
+            background: #f8f8f8;
+            
+
+        }
+
+        h1 { 
+            font-size: 2.75rem;
+        }
+        p {
+            font-size: 1.25rem; 
+        }
+
+        .background { 
+            background: #f8f8f8;
+            width: 100%;
+            height: 100%;
+            
+        }
+
+        /*navbar*/
+        .navbar {
+            background-color: #20232b;
+            color: white;
+            padding: 20px;
+            align-items: center;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            font-family: "Anton", sans-serif;
+            font-weight: 100;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+
+        .navbar img {
+            height: 20px;
+            width: 20px;
+        }
+
+        .img {
+            
+            height: 50%;
+            width: 90%;
+            box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+           
+            
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+
+        @media screen and (min-width: 600px){
+            .navbar img {
+                height: 30px;
+                width: 30px;
+            }
+            .navbar a {
+                color: white;
+                text-decoration: none;
+                margin: 0 25px;
+            }
+        }
+
+
+        .dropdown{
+            display: inline-block;
+            font-family: 'Protest Riot', sans-serif; 
+        }
+        .dropdown button{
+            background-color: #20232b;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-left: auto;
+        }
+        .dropdown a{
+            display: block;
+            color: black;
+            text-decoration: none;
+            padding: 10px 15px;
+        }
+        .dropdown .content{
+            display: none;
+            position: absolute;
+            background-color: hsl(0, 0%, 95%);
+            min-width: 10px;
+            box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+            right: 0;
+            
+        }
+        .dropdown:hover .content{
+            display: block;
+            
+        }
+        .dropdown:hover button{
+            box-shadow: 0 0 5px white,
+           0 0 10px lightskyblue, 0 0 15px lightskyblue,
+           0 0 20px lightskyblue, 0 0 25px lightskyblue,
+           0 0 30px lightskyblue;
+            
+        }
+        .dropdown a:hover{
+            color: white;
+            background-color: #333;
+        }
+
+        /*left menu*/
+        .sidebar {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #333;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 10px;
+        box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+        }
+
+        .sidebar ul {
+        list-style-type: none;
+        padding: 0;
+        }
+
+
+        .sidebar ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 125%;
+        }
+
+        @media screen and (min-width: 800px) {
+            .sidebar ul li a {
+                font-size: 100%;
+            }
+            
+        }
+
+        .sidebar ul li a:hover {
+        text-decoration: underline rgb(255, 166, 0);
+        }
+
+        .close {
+        text-align: right;
+        }
+
+        .closebutton {
+        color: #fff;
+        font-size: 60px;
+        cursor: pointer;
+        padding-right: 10%;
+        }
+
+        .content {
+        flex-grow: 1;
+        padding: 20px;
+        }
+
+
+        /*top portion*/
+        .detail { 
+            padding-left: 13%; 
+            width: 85%;
+            color: #333132;
+            
+        }
+        
+        .detail p {
+            font-family: "Georgia", sans-serif;
+            font-weight:100;
+           
+        }
+
+        /*bottom portion*/
+
+        .rankings {
+            padding-left: 13%;
+            width: 80%;
+            color: #333132;
+            
+        }
+
+        @media screen and (min-width: 600px) {
+            .rankings {
+                padding-left: 13%;
+                width: 70%;
+                color: #333132; 
+            }
+        }
+        
+        .rankings p{
+            font-family: "Georgia", sans-serif;
+            font-weight:100;
+            border: 2px solid black;
+            border-radius: 25px;
+            padding: 20px;
+            box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+            line-height: 2;
+            background-color: white;
+            
+        }
+        .ranktitle { 
+            display: inline;
+            
+        }
+        .ranknumber { 
+            background-color: #6CABDD;
+            justify-content: center;
+            align-items: center;
+            height: 40px;
+            width: 40px;
+            display: flex;
+            color: white;
+            font-weight: 300px;
+            padding:5px;
+            font-size:35px;
+            box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+        }       
+
+        .blue{
+            color: #3557ff;
+        }
+    </style>
+</head>
+<body>
+    <div class = "background">
+        <div class="navbar" style = "font-size: 25px;">
+            <div class="navbar-left">
+                <div class="dropdown">
+                    <div class="sidebar">
+                        <div class="close">
+                          <span class="closebutton" onclick="document.querySelector('.sidebar').style.width = '0%'">&times;</span>
+                        </div>
+                        <ul>
+                            <li><a href = "index.html"style = "text-decoration: underline orange;">Home</a>
+                                <br>
+
+                                <li><a style="text-decoration: underline orange;">Rankings</a></li>
+                                <li><a href= "fcb.html">- FC Barcelona</a></li>
+                                <!--<li><a href= "fcbspanish.html">- FC Barcelona (Spanish)</a></li>-->
+                                <li><a href= "rm.html">- Real Madrid CF</a></li>
+                                <!--<li><a href= "rmspanish.html">- Real Madrid CF (Spanish)</a></li>-->
+                                <li><a href= "mc.html">- Manchester City FC</a></li>
+                                <!--<li><a href= "mcspanish.html">- Manchester City FC (Spanish)</a></li>-->
+                                <li><a href= "fcbm.html">- FC Bayern Munich</a></li>
+
+                                <br>
+                                <li><a style="text-decoration: underline orange;">Would You Rather</a></li>
+                                <li><a href= "FCBWYR edition.html">- FCB Edition</a></li>
+                                <li><a href= "RMWYR edition.html">- RMCF Edition</a></li>
+                                <li><a href= "MCWYR edition.html">- MCFC Edition</a></li>
+                                <li><a href= "FCBMWYR edition.html">-  FCBM Edition</a></li>
+                            </li>
+  
+  
+                        </ul>
+                    </div>
+                    <button><img src = "lmenu.svg" onclick="openmenu()" style = "height: 30px; width: 30px;"></button>
+                </div>
+            </div>
+            <div class="navbar-middle" style = "margin-left: 10px;">
+                <a title="Blackcat, CC BY-SA 3.0 &lt;https://creativecommons.org/licenses/by-sa/3.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Association_football_ball_with_HEX-1AC66B_background.svg"><img width="256" alt="Association football ball with HEX-1AC66B background" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Association_football_ball_with_HEX-1AC66B_background.svg/256px-Association_football_ball_with_HEX-1AC66B_background.svg.png"></a>
+                Soccer Ranker
+                <a title="Blackcat, CC BY-SA 3.0 &lt;https://creativecommons.org/licenses/by-sa/3.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Association_football_ball_with_HEX-1AC66B_background.svg"><img width="256" alt="Association football ball with HEX-1AC66B background" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Association_football_ball_with_HEX-1AC66B_background.svg/256px-Association_football_ball_with_HEX-1AC66B_background.svg.png"></a>
+            </div>
+            <div class="dropdown">
+                <button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="IconChangeColor" height="35px" width="35px"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM64 256c0-17.7 14.3-32 32-32H480c17.7 0 32 14.3 32 32s-14.3 32-32 32H96c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" id="mainIconPathAttribute" fill="#ffffff"></path></svg></button>
+                <div class="content">
+                    <a href= "mcspanish.html">MCFC Rankings Spanish</a>
+                    <a href="MCWYR edition.html">MCFC Would You Rather</a>
+                </div>
+            </div>
+        </div>
+        <div class="navbar" style = "background-color: rgba(83, 56, 23, 0.111);"></div>
+        <div class = "detail">
+            <h1>Manchester City FC: Top 10 Best Currently Playing Players</h1>
+            <p>Fans across the world voted to determine which MCFC player they thought was the best, and the results display who have the highest rankings!</p>
+            <p style = "font: 10px/1.231 arial,helvetica,clean,sans-serif;">PUBLISHED MAR 4, 2024</p>
+            <img class = "img" src="clubmancity.png">
+            <p>
+                In celebration of Manchester City's 144th creation anniversary and their recent UCL & treble triumphs, fans were asked to
+                <br> 
+                send in their votes of who their top players are, and the results were tallied in the MCFC top 10 poll from reddit's r/MCFC.
+            </p>
+            <p>
+                With a large variety of players to choose from, it's no surprise that many voters struggled to pick the best. However, some 
+                <br> 
+                players have stood out more to fans and enjoyers, whether through their skills, personality, or much more. The team wouldn't  
+                <br> 
+                be the same without them.</p>
+        </div>
+    
+        <div class = "rankings">
+        
+            <div class="rank-container" style="display: flex; align-items: center;">
+                <div class = "ranktitle ranknumber">10</div>
+                <h1 class = "ranktitle" style = "padding-left: 10px;">Ederson</h1>
+            </div>
+            
+            <p>
+                <span class = "blue" style = "font-weight: bold;">MCFC's world class goalkeeper.</span> He is not your typical goalkeeper - for, with his exceptional footwork and distribution skills, 
+                he essentially transforms himself into an <span class = "blue"> extra outfield player.</span> It is a truly <span class = "blue">unordinary</span> aspect that revolutionizes how
+                Manchester City build attacks from the back. His <span class = "blue">long-range passing</span> accuracy is astonishing, giving City the ability to
+                <span class = "blue">switch play quickly</span> and find attackers in dangerous spaces. Ederson's bravery and command of his area make him a reassuring
+                presence in defense.  And beyond being a shot-stopper, he's an <span class = "blue">integral part</span> of City's attacking philosophy - which makes him an
+                <span class = "blue">invaluable asset</span>for the team.
+                
+            </p>
+    
+    
+            <div class="rank-container" style="display: flex; align-items: center;">
+                <div class = "ranktitle ranknumber">9</div><h1 class = "ranktitle" style = "padding-left: 10px;">Nathan Aké</h1>
+            </div>
+            
+            <p>
+                <span class = "blue" style = "font-weight: bold;">MCFC's rock-solid defender.</span> He's a naturally <span class = "blue">left-footed center-back,</span> a rarity that adds balance and flexibility to
+                City's backline. His tactical intelligence and reading of the game allow him to anticipate threats and make <span class = "blue">crucial
+                interceptions.</span> He is composed on the ball and <span class = "blue">comfortable passing out</span> from the back, which suits City's possession-based
+                style. Additionally, his <span class = "blue">versatility</span> makes him capable of playing left-back, providing <span class = "blue">essential cover</span> in multiple positions.
+                
+            </p>
+    
+    
+            <div class="rank-container" style="display: flex; align-items: center;">
+                <div class = "ranktitle ranknumber">8</div><h1 class = "ranktitle" style = "padding-left: 10px;">Julián Álvarez</h1>
+            </div>
+            
+            <p>
+                <span class = "blue" style = "font-weight: bold;"> MCFC's Argentinian dynamo.</span> Nicknamed <span class = "blue">"La Araña"</span> (the spider), 
+                he is known for his intelligent and <span class = "blue">powerful runs,</span> passing, and dynamic goal scoring ability, which
+                makes him the <span class = "blue">ideal player</span> for Manchester City's attack. He's a clinical finisher, with a knack for being in the <span class = "blue">right place at the right time.</span>
+                His movement off the ball is intelligent, constantly disrupting defenses and <span class = "blue">creating space</span> for himself and his teammates. He also has a 
+                unrelenting <span class = "blue">work ethic,</span> pressing tirelessly to win the ball back. 
+            </p>
+    
+            <div class="rank-container" style="display: flex; align-items: center;">
+                <div class = "ranktitle ranknumber">7</div><h1 class = "ranktitle" style = "padding-left: 10px;">Bernardo Silva</h1>
+            </div>
+            
+            <p>
+                <span class = "blue" style = "font-weight: bold;"> MCFC's midfield maestro.</span> His technical finesse is unmatched; his <span class = "blue">close control</span> and dribbling turn defenders inside out.
+                His <span class = "blue">vision and passing range</span> are <span class = "blue">sublime,</span> enabling him to unlock defenses with precision. He's also a <span class = "blue">tireless worker</span> -
+                where his relentless pressing and <span class = "blue">intelligent movements</span> make him a constant threat on and off the ball. This combination
+                of creativity, work rate, and tactical intelligence makes Bernardo Silva a <span class = "blue">priceless asset</span> to Manchester City. A man 
+                heavily <span class = "blue">praised</span> by Pep Guardiola himself. 
+                
+            </p>
+    
+    
+            <div class="rank-container" style="display: flex; align-items: center;">
+                <div class = "ranktitle ranknumber">6</div><h1 class = "ranktitle" style = "padding-left: 10px;">Rúben Dias</h1>
+            </div>
+            
+            <p>
+                <span class = "blue" style = "font-weight: bold;"> MCFC's center-back powerhouse.</span> With superb tackling, astute positioning, and aerial dominance, he forms an
+                impenetrable <span class = "blue"> wall at the heart of defense.</span> Dias's excellent reading of the game allows him to <span class = "blue"> nullify threats</span>
+                and organize his defensive line. His composure on the ball and ability to <span class = "blue"> launch attacks from the back</span> make
+                him a true modern center-back. His <span class = "blue"> quality and experience</span> also give him  the ability to make <span class = "blue"> tremendous saves,</span> such as
+                his famous instinctive act of heading the ball wide of the goal post in the late minutes of the UCL final in 2023
+                (for most CBs, that would have been an own goal). Dias's influence is undeniable; his <span class = "blue"> presence elevates those
+                around him</span> his impact on teams is transformative.
+                
+            </p>
+    
+    
+            <div class="rank-container" style="display: flex; align-items: center;">
+                <div class = "ranktitle ranknumber">5</div><h1 class = "ranktitle" style = "padding-left: 10px;">John Stones</h1>
+            </div>
+            
+            <p>
+                <span class = "blue" style = "font-weight: bold;"> MCFC's exceptional defender.</span> While his most comfortable position is at center-back, Stones's <span class = "blue"> versatility</span>
+                allows him to play at right-back, defensive midfielder, and even as a central midfielder at times.
+                And with this, he is also renowned for his <span class = "blue"> composure and ball-playing abilities.</span> He is exceptionally
+                comfortable in possession, able to break lines with accurate passes and <span class = "blue"> initiate attacks from deep.</span>
+                Stones is also a <span class = "blue"> commanding presence in the air,</span> winning headers and duels with physical forwards.
+                His reading of the game and positional awareness are excellent, allowing him to make timely interceptions. 
+                He is also known for his tendency to make <span class = "blue"> important goal line saves.</span>
+            
+            </p>
+    
+    
+            <div class="rank-container" style="display: flex; align-items: center;">
+                <div class = "ranktitle ranknumber">4</div><h1 class = "ranktitle" style = "padding-left: 10px;">Phil Foden</h1>
+            </div>
+            
+            <p>
+                <span class = "blue" style = "font-weight: bold;"> MCFC's homegrown prodigy.</span> His meteoric rise at Manchester City is a testament to his <span class = "blue"> exceptional talent</span> and dedication.
+                Foden's magic lies in his <span class = "blue"> technical brilliance.</span> His close control, silky first touch, and ability to weave through
+                defenders are <span class = "blue"> reminiscent of legendary Spanish midfielders.</span> His vision is superb, allowing him to pick out defense-splitting
+                passes and create goalscoring opportunities out of thin air. He is truly Manchester City's <span class = "blue"> starboy.</span>
+            </p>
+    
+    
+            <div class="rank-container" style="display: flex; align-items: center;">
+                <div class = "ranktitle ranknumber">3</div><h1 class = "ranktitle" style = "padding-left: 10px;">Erling Haaland</h1>
+            </div>
+            
+            <p>
+                <span class = "blue" style = "font-weight: bold;"> MCFC's notorious goal machine.</span> With <span class = "blue"> 52 goals and 9 assists</span> and multiple records broken in just his <span class = "blue"> first season</span> at 
+                Manchester City, there is nothing much else to say about this man. He is truly a <span class = "blue"> beast,</span> with the qualities of 
+                of being a <span class = "blue"> future ballon d'or winner</span> - he was even already the runner up for it in 2023. With the way that he scores 
+                so efforlesstly, it almost seems robotic. But this is truly due to his <span class = "blue"> fantastic understanding of the play of the game.</span> 
+                One of those aspects is his <span class = "blue"> exceptional positioning</span> - which has heavily caused his abundance of goals in every competition. He knows
+                when to be in the <span class = "blue"> right place at the right time,</span> more often than many others. 
+                
+            </p>
+    
+            <div class="rank-container" style="display: flex; align-items: center;">
+                <div class = "ranktitle ranknumber">2</div><h1 class = "ranktitle" style = "padding-left: 10px;">Rodri</h1>
+            </div>
+            
+            <p>
+                <span class = "blue" style = "font-weight: bold;"> MCFC's most important player.</span> As a traditional defensive midfielder, he has excellent <span class = "blue"> tactical discipline</span> ball retention - which
+                altogether lead to an <span class = "blue"> increased control of the tempo of the game,</span> which is crucial for MCFC's style of play. He also posesses great passing range and accuracy.
+                And with that, he can <span class = "blue"> distribute the ball effectively</span> from deep positions, initiating attacks and <span class = "blue"> transitioning from defense</span> to attack seamlessly. He is also often regarded
+                as a clutch player with his <span class = "blue"> goal-scoring ability,</span> even as a DM. His <span class = "blue"> goal in the final of the Champions League</span> in 2023 was the cause of MCFC's <span class = "blue"> first UCL win</span> ever in their history.
+                
+            </p>
+    
+    
+            <div class="rank-container" style="display: flex; align-items: center;">
+                <div class = "ranktitle ranknumber">1</div><h1 class = "ranktitle" style = "padding-left: 10px;">Kevin De Bruyne</h1>
+            </div>
+            
+            <p>
+                <span class = "blue" style = "font-weight: bold;"> MCFC's best player, by far.</span> With his <span class = "blue"> exceptional passing ability</span> and tactical intelligence, he is widely considered a world-class playmaker. Often called the "assist king" he is known primarly for his assists,
+                which showcase his sheer skill in the sport - for most of <span class = "blue"> his assists are truly exceptional.</span> That exceptionality has broken multiple records, including becoming the<span class = "blue">  player with the most assists in the top leagues in the last decade.</span>
+                With the introduction of Erling Haaland to MCFC as well, <span class = "blue"> KDB and Haaland</span> have popularized themselves as a <span class = "blue"> deadly duo</span> with their link up play - getting up to 4 assists and 4 goals between them
+                in a single game at times. <span class = "blue"> A force to be reckoned with.</span> 
+            </p>
+
+            
+        
+        </div>
+    </div>
+
+    <script>
+        function openmenu(){
+            var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
+            if (screenWidth > 800) { 
+                document.querySelector('.sidebar').style.width = '27%';
+            } else {
+                document.querySelector('.sidebar').style.width = '100%';
+            }
+        }
+    </script>
+</body>
+</html>

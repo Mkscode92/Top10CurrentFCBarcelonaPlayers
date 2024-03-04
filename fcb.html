@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FC Barcelona: Top 10 Best Currently Playing Players</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@500&family=Vina+Sans&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Langar&family=Protest+Riot&display=swap" rel="stylesheet">
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5377085184392554"
+     crossorigin="anonymous"></script>
+
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Rajdhani", sans-serif;
+            font-weight: 600;
+            font-style: normal;
+            background: #f8f8f8;
+            
+
+        }
+
+        h1 { 
+            font-size: 2.75rem;
+        }
+        p {
+            font-size: 1.25rem; 
+        }
+
+        .background { 
+            background: #f8f8f8;
+            width: 100%;
+            height: 100%;
+            
+        }
+
+        /*navbar*/
+        .navbar {
+            background-color: #20232b;
+            color: white;
+            padding: 20px;
+            align-items: center;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            font-family: "Anton", sans-serif;
+            font-weight: 100;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+
+        .navbar img {
+            height: 20px;
+            width: 20px;
+        }
+
+        .img {
+            
+            height: 50%;
+            width: 90%;
+            box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+           
+            
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+
+        @media screen and (min-width: 600px){
+            .navbar img {
+                height: 30px;
+                width: 30px;
+            }
+            .navbar a {
+                color: white;
+                text-decoration: none;
+                margin: 0 25px;
+            }
+        }
+
+
+        .dropdown{
+            display: inline-block;
+            font-family: 'Protest Riot', sans-serif; 
+        }
+        .dropdown button{
+            background-color: #20232b;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-left: auto;
+        }
+        .dropdown a{
+            display: block;
+            color: black;
+            text-decoration: none;
+            padding: 10px 15px;
+        }
+        .dropdown .content{
+            display: none;
+            position: absolute;
+            background-color: hsl(0, 0%, 95%);
+            min-width: 10px;
+            box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+            right: 0;
+            
+        }
+        .dropdown:hover .content{
+            display: block;
+            
+        }
+        .dropdown:hover button{
+            box-shadow: 0 0 5px white,
+           0 0 10px lightskyblue, 0 0 15px lightskyblue,
+           0 0 20px lightskyblue, 0 0 25px lightskyblue,
+           0 0 30px lightskyblue;
+            
+        }
+        .dropdown a:hover{
+            color: white;
+            background-color: #333;
+        }
+
+        /*left menu*/
+        .sidebar {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #333;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 10px;
+        box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+        }
+
+        .sidebar ul {
+        list-style-type: none;
+        padding: 0;
+        }
+
+
+        .sidebar ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 125%;
+        }
+
+        @media screen and (min-width: 800px) {
+            .sidebar ul li a {
+                font-size: 100%;
+            }
+            
+        }
+
+        .sidebar ul li a:hover {
+        text-decoration: underline rgb(255, 166, 0);
+        }
+
+        .close {
+        text-align: right;
+        }
+
+        .closebutton {
+        color: #fff;
+        font-size: 60px;
+        cursor: pointer;
+        padding-right: 10%;
+        }
+
+        .content {
+        flex-grow: 1;
+        padding: 20px;
+        }
+
+
+        /*top portion*/
+        .detail { 
+            padding-left: 13%; 
+            width: 85%;
+            color: #333132;
+            
+        }
+        
+        .detail p {
+            font-family: "Georgia", sans-serif;
+            font-weight:100;
+           
+        }
+
+        /*bottom portion*/
+
+        .rankings {
+            padding-left: 13%;
+            width: 80%;
+            color: #333132;
+            
+        }
+
+        @media screen and (min-width: 600px) {
+            .rankings {
+                padding-left: 13%;
+                width: 70%;
+                color: #333132; 
+            }
+        }
+        
+        .rankings p{
+            font-family: "Georgia", sans-serif;
+            font-weight:100;
+            border: 2px solid black;
+            border-radius: 25px;
+            padding: 20px;
+            box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+            line-height: 2;
+            background-color: white;
+            
+        }
+        .ranktitle { 
+            display: inline;
+            
+        }
+        .ranknumber { 
+            background-color: #004D98;
+            justify-content: center;
+            align-items: center;
+            height: 40px;
+            width: 40px;
+            display: flex;
+            color: white;
+            font-weight: 300px;
+            padding:5px;
+            font-size:35px;
+            box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+        }       
+    </style>
+</head>
+<body>
+    <div class = "background">
+        <div class="navbar" style = "font-size: 25px;">
+            <div class="navbar-left">
+                <div class="dropdown">
+                    <div class="sidebar">
+                        <div class="close">
+                          <span class="closebutton" onclick="document.querySelector('.sidebar').style.width = '0%'">&times;</span>
+                        </div>
+                        <ul>
+                          <li><a href = "index.html"style = "text-decoration: underline orange;">Home</a></li>
+                          <br>
+
+                          <li><a style="text-decoration: underline orange;">Rankings</a></li>
+                          <li><a href= "fcb.html">- FC Barcelona</a></li>
+                          <!--<li><a href= "fcbspanish.html">- FC Barcelona (Spanish)</a></li>-->
+                          <li><a href= "rm.html">- Real Madrid CF</a></li>
+                          <!--<li><a href= "rmspanish.html">- Real Madrid CF (Spanish)</a></li>-->
+                          <li><a href= "mc.html">- Manchester City FC</a></li>
+                          <!--<li><a href= "mcspanish.html">- Manchester City FC (Spanish)</a></li>-->
+                          <li><a href= "fcbm.html">- FC Bayern Munich</a></li>
+                          <!--<li><a href= "fcbmgerman.html">- FC Bayern Munich (German)</a></li>-->
+
+                          <br>
+                          <li><a style="text-decoration: underline orange;">Would You Rather</a></li>
+                          <li><a href= "FCBWYR edition.html">- FCB Edition</a></li>
+                          <li><a href= "RMWYR edition.html">- RMCF Edition</a></li>
+                          <li><a href= "MCWYR edition.html">- MCFC Edition</a></li>
+                          <li><a href= "FCBMWYR edition.html">-  FCBM Edition</a></li>
+  
+                        </ul>
+                    </div>
+                    <button><img src = "lmenu.svg" onclick="openmenu()" style = "height: 30px; width: 30px;"></button>
+                </div>
+            </div>
+            <div class="navbar-middle" style = "margin-left: 10px;">
+                <a title="Blackcat, CC BY-SA 3.0 &lt;https://creativecommons.org/licenses/by-sa/3.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Association_football_ball_with_HEX-1AC66B_background.svg"><img width="256" alt="Association football ball with HEX-1AC66B background" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Association_football_ball_with_HEX-1AC66B_background.svg/256px-Association_football_ball_with_HEX-1AC66B_background.svg.png"></a>
+                Soccer Ranker
+                <a title="Blackcat, CC BY-SA 3.0 &lt;https://creativecommons.org/licenses/by-sa/3.0&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Association_football_ball_with_HEX-1AC66B_background.svg"><img width="256" alt="Association football ball with HEX-1AC66B background" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Association_football_ball_with_HEX-1AC66B_background.svg/256px-Association_football_ball_with_HEX-1AC66B_background.svg.png"></a>
+            </div>
+            <div class="dropdown">
+                <button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="IconChangeColor" height="35px" width="35px"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM64 256c0-17.7 14.3-32 32-32H480c17.7 0 32 14.3 32 32s-14.3 32-32 32H96c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" id="mainIconPathAttribute" fill="#ffffff"></path></svg></button>
+                <div class="content">
+                    <a href= "fcbspanish.html">FCB Rankings Spanish</a>
+                    <a href="FCBWYR edition.html">FCB Would You Rather</a>
+                </div>
+            </div>
+        </div>
+        <div class="navbar" style = "background-color: rgba(83, 56, 23, 0.111);"></div>
+        <div class = "detail">
+            <h1>FC Barcelona: Top 10 Best Currently Playing Players</h1>
+            <p>Fans across the world voted to determine which FCB player they thought was the best, and the results display who have the highest rankings!</p>
+            <p style = "font: 10px/1.231 arial,helvetica,clean,sans-serif;">PUBLISHED FEB 8, 2024</p>
+            <img class = "img" src="clubbarca.png">
+            <p>
+                In celebration of FC Barcelona's 125th creation anniversary and their recent La Liga triumph, fans were asked to
+                <br> 
+                send in their votes of who their top players are, and the results were tallied in the FCB top 10 poll from reddit's r/Barca.
+            </p>
+            <p>
+                With a large variety of players to choose from, it's no surprise that many voters struggled to pick the best. However, some 
+                <br> 
+                players have stood out more to fans and enjoyers, whether through their skills, personality, or much more. The team wouldn't  
+                <br> 
+                be the same without them.</p>
+        </div>
+    
+        <div class = "rankings">
+        
+            <div class="rank-container" style="display: flex; align-items: center;">
+                <div class = "ranktitle ranknumber">10</div>
+                <h1 class = "ranktitle" style = "padding-left: 10px;">Raphinha</h1>
+            </div>
+            
+            <p>
+                <span style= "font-weight: bold; color: #3557ff;">FCB’s valued Brazilian player.</span>
+                While he is a relatively new player, he has quickly shown his technical
+                qualities and has adapted very well to their playstyle. He is Barcelona's
+                main man with <span style= "color: #3557ff;">G/As</span> at many times during each season. He possesses high dribbling
+                ability, <span style= "color: #3557ff;">ball control</span> and precise passing as a typical <span style= "color: #3557ff;">right winger</span>. And with his
+                high work rate, he is adaptable and can even drop down into semi-defensive positions.
+                A classy Brazilian.
+            </p>
+    
+    
+            <div class="rank-container" style="display: flex; align-items: center;">
+                <div class = "ranktitle ranknumber">9</div><h1 class = "ranktitle" style = "padding-left: 10px;">İlkay Gündoğan</h1>
+            </div>
+            
+            <p>
+                <span style= "font-weight: bold; color: #3557ff;">FCB’s most experienced player.</span> As the previous <span style= "color: #3557ff;">captain</span> of the treble &
+                champions league winning <span style= "color: #3557ff;">Manchester City</span> in 2023, he is a asset that is
+                priceless. Often regarded as a <span style= "color: #3557ff;">big-game player,</span> he repeatedly shows his
+                class through his variety of passes, throughballs, and <span style= "color: #3557ff;">goalscoring
+                ability</span> as a central midfielder.
+            </p>
+    
+    
+            <div class="rank-container" style="display: flex; align-items: center;">
+                <div class = "ranktitle ranknumber">8</div><h1 class = "ranktitle" style = "padding-left: 10px;">Ferran Torres</h1>
+            </div>
+            
+            <p>
+                <span style= "font-weight: bold; color: #3557ff;">FCB’s most versatile forward.</span> He has phenomenal technical skills
+                that make him a valuable asset in the <span style= "color: #3557ff;">attacking third.</span> And with
+                his versality, he can play as a center forward, right winger or a
+                left winger and excels at them all. His ability to adapt to
+                different roles provides <span style= "color: #3557ff;">tactical flexibility</span> for the team. He is
+                also a <span style= "color: #3557ff;">prolific goalscorer</span> for FCB, and is often regarded as a
+                <span style= "color: #3557ff;">clutch</span> player.
+            </p>
+    
+            <div class="rank-container" style="display: flex; align-items: center;">
+                <div class = "ranktitle ranknumber">7</div><h1 class = "ranktitle" style = "padding-left: 10px;">Lamine Yamal</h1>
+            </div>
+            
+            <p>
+                <span style= "font-weight: bold; color: #3557ff;">FCB’s talented young prodigy.</span> While only being a teenager,
+                his <span style= "color: #3557ff;">flawless skills</span> at such a young age as a right winger 
+                have made him even be compared to Barcelona greats like <span style= "color: #3557ff;">Lionel Messi.</span> 
+                He is a force to be reckoned with with his daring <span style= "color: #3557ff;">dribbling</span> and passing 
+                abilities, and has a higher <span style= "color: #3557ff;">chance creating</span> ability than most senior 
+                players.</span> He is a true <span style= "color: #3557ff;">Barcelona gem,</span> not only for the present, 
+                but for the future.
+            </p>
+    
+    
+            <div class="rank-container" style="display: flex; align-items: center;">
+                <div class = "ranktitle ranknumber">6</div><h1 class = "ranktitle" style = "padding-left: 10px;">João Cancelo
+                </h1>
+            </div>
+            
+            <p>
+                <span style= "font-weight: bold; color: #3557ff;">FCB's world class fullback.</span> As a fullback, he's <span style= "color: #3557ff;">versatile,</span> 
+                because not only can he play his primary position of right-back, 
+                he also can play as a left back, left winger, or a right winger. 
+                In all of these positions though, he is known for his speed, 
+                offensive capabilities, <span style= "color: #3557ff;">technical skills,</span> dribbling skills, 
+                creativity, and <span style= "color: #3557ff;">crossing ability.</span> He is a <span style= "color: #3557ff;">key player</span> for FCB's 
+                first team, and has the quality and <span style= "color: #3557ff;">experience</span> - especially 
+                since he was part of Manchester City's <span style= "color: #3557ff;">treble</span> winning team 
+                for half the season in 2023.
+            </p>
+    
+    
+            <div class="rank-container" style="display: flex; align-items: center;">
+                <div class = "ranktitle ranknumber">5</div><h1 class = "ranktitle" style = "padding-left: 10px;">Ronald Araujo</h1>
+            </div>
+            
+            <p>
+                <span style= "font-weight: bold; color: #3557ff;">FCB's world class center-back.</span> He is a phenomenal <span style= "color: #3557ff;">defender,</span> 
+                who is strong, fast, and great in <span style= "color: #3557ff;">aerial duels.</span> He tackles 
+                well, and can sometimes make long <span style= "color: #3557ff;">diagonal passes</span> that can 
+                be crucial to <span style= "color: #3557ff;">advancing play.</span> He posseses great pace, and, 
+                as FCB's third captain, also possesses great <span style= "color: #3557ff;">leadership.</span>
+            </p>
+    
+    
+            <div class="rank-container" style="display: flex; align-items: center;">
+                <div class = "ranktitle ranknumber">4</div><h1 class = "ranktitle" style = "padding-left: 10px;">Marc-André ter Stegen</h1>
+            </div>
+            
+            <p>
+                <span style= "font-weight: bold; color: #3557ff;">FCB’s brick wall in defense.</span> He is a true world class goalkeeper, 
+                often regarded as the <span style= "color: #3557ff;">"GOATkeeper"</span> by FCB fans. He ranks among 
+                the <span style= "color: #3557ff;">top 5</span> current best goalkeepers currently because of his 
+                phenomenal <span style= "color: #3557ff;">shot stopping,</span> passing ability, reflexes, ball 
+                playing ability, and diving saves. His class has broken 
+                multiple records, with the most <span style= "color: #3557ff;">incredible</span> one coming in 
+                the recent 2022-2023 season where he conceded only <span style= "color: #3557ff;">18 goals 
+                in 38 league matches</span>, tying him with the <span style= "color: #3557ff;">no. 1 record</span> of 
+                goals-conceded to games ratio in La Liga history. He is the 
+                current 2nd <span style= "color: #3557ff;">captain</span> of FC Barcelona. 
+            </p>
+    
+    
+            <div class="rank-container" style="display: flex; align-items: center;">
+                <div class = "ranktitle ranknumber">3</div><h1 class = "ranktitle" style = "padding-left: 10px;">Pedri</h1>
+            </div>
+            
+            <p>
+                <span style= "font-weight: bold; color: #3557ff;">FCB’s most creative player.</span> He is quick, and is <span style= "color: #3557ff;">gifted</span> in 
+                <span style= "color: #3557ff;">technical skills.</span> His passes are near similar to those of 
+                <span style= "color: #3557ff;">FCB legends</span> such as Andres Iniesta and Lionel Messi - and 
+                so he is a <span style= "color: #3557ff;">great asset</span> to the team with his class skills. While he is injury 
+                prone, it is often said that <span style= "color: #3557ff;">“a fit Pedri cannot be benched”</span>. 
+                His impact on the field is tremendous.
+            </p>
+    
+            <div class="rank-container" style="display: flex; align-items: center;">
+                <div class = "ranktitle ranknumber">2</div><h1 class = "ranktitle" style = "padding-left: 10px;">Gavi</h1>
+            </div>
+            
+            <p>
+                <span style= "font-weight: bold; color: #3557ff;">FCB’s most active player.</span> He can play multiple positions 
+                and has the <span style= "color: #3557ff;">highest work rate</span> of the entire squad, which 
+                is accredited to his <span style= "color: #3557ff;">youth</span> and his severe <span style= "color: #3557ff;">passion</span> for the 
+                team. While he primarily plays as a <span style= "color: #3557ff;">central midfielder,</span> 
+                people often say that “he is <span style= "color: #3557ff;">everywhere</span> on the field” 
+                because he is always there in most plays, even in defense. 
+                <span style= "color: #3557ff;">Without him</span> on the field, there is a <span style= "color: #3557ff;">visible change</span> in 
+                the playstyle of the FCB team.
+            </p>
+    
+    
+            <div class="rank-container" style="display: flex; align-items: center;">
+                <div class = "ranktitle ranknumber">1</div><h1 class = "ranktitle" style = "padding-left: 10px;">Frenkie de Jong</h1>
+            </div>
+            
+            <p>
+                <span style= "font-weight: bold; color: #3557ff;">FCB’s best player, by far.</span> De Jong is known for his 
+                <span style= "color: #3557ff;">versatility,</span> being able to play in various midfield roles. 
+                His <span style= "color: #3557ff;">adaptability</span> allows Barcelona to use him in different 
+                positions based on the team's needs. He also possesses 
+                excellent ball control, passing skills, <span style= "color: #3557ff;">exceptional vision,</span> 
+                and is known for his ability to <span style= "color: #3557ff;">dictate the tempo</span> of the 
+                game and <span style= "color: #3557ff;">distribute the ball</span> effectively. This is <span style= "color: #3557ff;">crucial</span> 
+                for Barcelona's possession-based style of play. He also 
+                has a <span style= "color: #3557ff;">high work rate</span> that is almost on par with that of Gavi’s.
+            </p>
+
+            
+        
+        </div>
+    </div>
+
+    <script>
+        function openmenu(){
+            var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
+            if (screenWidth > 800) { 
+                document.querySelector('.sidebar').style.width = '27%';
+            } else {
+                document.querySelector('.sidebar').style.width = '100%';
+            }
+        }
+    </script>
+</body>
+</html>
