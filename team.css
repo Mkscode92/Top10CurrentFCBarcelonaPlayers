@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=McLaren&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+body{ 
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+    background: url("bgs.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    display: flex;
+    align-items: center; 
+    justify-content: baseline;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.idcontainer{ 
+    border: 2px solid white; 
+    border-radius: 10px;
+    padding: 5px;
+    margin: 1% 0 1% 0;
+}
+.idcontainer button{ 
+    border-radius: 5px;
+}
+.idcontainer input{
+    border-radius: 5px;
+}
+.container{ 
+    text-align: center;
+    border: 2px solid white; 
+    border-radius: 10px;
+    width: 400px;
+    height: fit-content;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+}
+
+.headcontainer{ 
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.head{ 
+    font-family: "McLaren", cursive !important;
+    font-weight: bold;
+    text-decoration: underline;
+    padding: 0px 20px 0px 20px;
+}
+
+.player{ 
+    text-align: center;
+    padding: 10px;
+    margin: 30px;
+    border: 2px solid white; 
+    border-radius: 10px;
+    background-color: rgba(198,0,63,255);
+    box-shadow: 0 0 10px rgba(0,0,0,.4);
+}
+
+.button {
+    align-items: center;
+    appearance: none;
+    background-color: #FCFCFD;
+    border-radius: 10px;
+    border-width: 0;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #36395A;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "Nunito Sans", sans-serif;
+    height: 48px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s,transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow,transform;
+}
+
+.button:focus {
+    box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.button:active {
+    box-shadow: #D6D6E7 0 3px 7px inset;
+    transform: translateY(2px);
+}
+
+#submitId:hover{
+    background-color: #004dff;
+    color: white;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #1616e0 0 -3px 0 inset;
+    transform: translateY(-2px);
+    font-weight: bold;
+}
+
+#random{ 
+    background-color: #dc3545;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #a92633 0 -3px 0 inset;
+    color: white;
+    font-weight: bold;
+}
+#random:hover{
+    background-color: #004dff;
+    color: white;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #1616e0 0 -3px 0 inset;
+    transform: translateY(-2px);
+}
+
+svg{
+    margin-right: 10px;
+}
