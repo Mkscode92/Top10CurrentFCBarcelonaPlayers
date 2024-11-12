@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=McLaren&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+nav{ 
+    background-color: antiquewhite;
+  
+}
+
+body{ 
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-weight: 600 !important;
+  font-style: normal;
+  background-color: rgb(21 114 93 / 1);/*rgb(23 37 84 / 1); */
+  flex-direction: column;
+  display: flex;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+
+  
+}
+
+.leads{ 
+    font-size: 1.15rem;
+}
+
+.button{ 
+    border-radius: 50px;
+    background-color: rgb(177, 229, 118);
+    color: white;
+}
+
+button:hover{
+    background-color: red;
+}
+
+.parts{ 
+    color: rgb(177, 229, 118)
+}
+
+h1{
+    font-size: calc(1.5rem + 1.5vw);
+    text-wrap: balance;
+}
+
+.topvideos video{
+    width: 48%;
+    height: 50%;
+    
+}
+
+.topvideos{ 
+    display: flex;
+    flex-direction: row !important;
+    gap: 4%;
+}
+
+@media only screen and (max-width: 1000px) {
+    .topvideos{ 
+        flex-direction: column !important;
+    }
+    .topvideos video{
+        width: 100%;
+        margin-bottom: 10%;
+    }
+  }
+
+/* languages section */
+
+.languages{
+    background-color: rgb(247 246 242 / 1) !important;
+    height: auto;
+    width: auto;
+}
+
+.two img{
+    width: 480px;
+    height: 420px;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 200px;
+    padding: 5%;
+    text-align: left !important;
+}
+
+.one{
+    text-wrap:wrap;
+    padding-top: 10%;
+    padding-left: 100px;
+    align-items: center;
+}
+.one h1{
+    font-weight: bold;
+}
+
+/* api crud section */
+.api-features{ 
+    background-color: rgb(217, 241, 199);
+}
+
+.apione{ 
+    text-wrap:wrap;
+    padding-top: 10%;
+    align-items: center;
+    padding-left: 100px;
+    align-items: center;
+}
+
+.apione h1{
+    font-weight: bold;
+}
+
+.apitwo img{
+    width: 480px;
+    height: 420px;
+}
+@media only screen and (max-width: 1000px) {
+    .wrapper{
+        display: grid;
+        grid-template-columns: none;
+        gap: 3%;
+    }
+    .one{
+        padding-left: 0px;
+        max-width: 34ch;
+        
+    }
+    .two img{ 
+        width: 100%;
+        height: 98%;
+    }
+    .apione{
+        max-width: 35ch;
+        padding-left: 0px;
+    }
+    .apitwo img{ 
+        width: 100%; 
+        height: 98%;
+    }
+  }
+
