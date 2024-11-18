@@ -32,6 +32,9 @@ body{
     #price{
         display: none;
     }
+    #start{
+        display: none;
+    }
 }
 
 #features{
