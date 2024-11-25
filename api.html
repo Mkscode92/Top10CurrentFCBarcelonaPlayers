@@ -21,10 +21,8 @@
         <div class="container">
             <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3">
               <div class="col-md-3 mb-2 mb-md-0" style = >
-                <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
-                  <!-- <img width="10%" height="10%" alt="Association football ball" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Association_football_ball_with_HEX-1AC66B_background.svg/256px-Association_football_ball_with_HEX-1AC66B_background.svg.png"> -->
+                <a href="api.html" class="d-inline-flex link-body-emphasis text-decoration-none">
                   <img width = 30% alt="sr logo" src="sa-cropped.svg">
-                  <!-- <span style="padding: 2% 0 0 2%; color: rgb(23, 84, 37); font-size: 16px;">Soccer Ranker</span> -->
                 </a>
                 
                 
@@ -32,13 +30,13 @@
         
               <div class="col-md-3 text-end">
                 <a href = "https://rapidapi.com/mksrinivasula5/api/soccer-news-player-profiles-api/pricing"><button style = "border: none" type="button" class="btn btn-outline-success me-2" id = "price">Pricing</button></a>
-                <a style = "border: none;" href = "https://rapidapi.com/mksrinivasula5/api/soccer-news-player-profiles-api"><button type="button" class="btn btn-success" id = "start" >Get Started</button></a>
+                <a style = "border: none;" href = "https://rapidapi.com/mksrinivasula5/api/soccer-news-player-profiles-api"><button type="button" class="btn btn-success" id = "getstart">Get Started</button></a>
               </div>
             </header>
         </div>
   </nav>
 
-  <div class="px-4 pt-5 my-5 text-center" style = "background-color: rgb(21 114 93 / 1); color: rgb(254 255 220 / 1)">
+  <div class="px-4 pt-5 my-5 text-center" style = "background-color: rgb(21 114 93 / 1); color: rgb(254 255 220 / 1)" id = "#home">
     <h1 class="display-7 fw-bold text-body-emphasis" style = "color: white !important; padding-bottom: 1%;"><span class = "parts">Real-time</span> Soccer News and Player<br> Profiles at your <span class = "parts">Fingertips.</span></h1>
     <div class="col-lg-6 mx-auto">
       <p class="leads mb-4" style = "color: white">Get access to the ever updating <span style = "text-decoration: underline;">2-in-1</span> API that can provide you with all the soccer information that you will ever need.</p>
@@ -52,17 +50,26 @@
     </div>
   </div>
 
-  <div class = "ncontainer">
-    <p>Comprehensive information from the most reliable sources</p>
+  <section class = "ncontainer" id = "sources">
+    <p style = "text-align: center; padding: 1% 0 0.5% 0; font-size: 1.25em; font-family: 'Libre Franklin', serif;" class = "fw-bold">Broad Coverage</p>
+    <p style = "text-align: center;padding:0 0 0 0; color:rgb(0 0 0 / 0.7); font-family: 'Libre Franklin', serif;">From the Most Reliable News Sources</p>
     <div class = "news-container">
-      <svg class = "nitem svg"role="img" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>FIFA</title><path d="M0 8.064v7.872h2.486v-2.843h1.728l.671-1.72H2.486V9.775h2.92l.637-1.711zm6.804 0L6.8 15.936h2.457V8.064zm4.15 0v7.872h2.484v-2.843h1.726l.677-1.72h-2.403V9.775h2.922L17 8.064zm7.658 0l-2.83 7.872h2.375l.306-1.058h2.769l.32 1.058H24l-2.837-7.872zm1.235 2.023l.981 3.277h-1.927z"/></svg>
+      <!-- <svg class="nitem svg" role="img" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>FIFA</title><path d="M0 8.064v7.872h2.486v-2.843h1.728l.671-1.72H2.486V9.775h2.92l.637-1.711zm6.804 0L6.8 15.936h2.457V8.064zm4.15 0v7.872h2.484v-2.843h1.726l.677-1.72h-2.403V9.775h2.922L17 8.064zm7.658 0l-2.83 7.872h2.375l.306-1.058h2.769l.32 1.058H24l-2.837-7.872zm1.235 2.023l.981 3.277h-1.927z"/></svg> -->
+      <img src = "fifa-svgrepo-com.svg" class = "img-svg nitem">
       <img src = "The_New_York_Times_Logo.svg" class = "img-svg nitem">
+      <img src = "cbs.svg" class = "img-svg nitem">
       <img src = "associated-press-seeklogo.svg" class = "img-svg nitem">
       <img src = "The_Guardian_2018.svg" class = "img-svg nitem">
+      
+      
     </div>
-  </div>
+  </section>
 
-  <section id="features">
+  
+
+  
+
+  <section id="features" id = "#features">
     <div class="container px-4 py-5" id="hanging-icons">
       <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
         <div class="col d-flex align-items-start">
@@ -100,7 +107,7 @@
             </svg>
           </div>
           <div>
-            <h3 style = "padding-bottom: 5%;" class="fs-2 text-body-emphasis">Top-Tier Credibility.</h3>
+            <h3 style = "padding-bottom: 5%;" class="fs-2 text-body-emphasis">Exceptional Credibility.</h3>
             <p>Our API is backed by trusted sources like FIFA, ESPN, AP News, and CBS Sports, ensuring your app delivers the most accurate and reliable information to users — anytime, anywhere.</p>
             
           </div>
@@ -130,23 +137,24 @@
         <p>Our API lets you use it in a wide variety of languages, from Python, Node.js, Java, Ruby and more. No matter what project you're working on, you can easily integrate in our API without switching any tools.</p>
       </div>
       <div class = "two">
-        <img class = "img" src = "feature2.webp">
+        <img src = "feature2.webp">
       </div>
     </div>
   </div>
 
-  <div class = "languages2">
+  <div class = "rapid" id = "hosting">
     <div class = "wrapper">
       <div class = "one">
-        <h1 style = "padding-bottom: 5%;">Multi-Language Support.</h1>
-        <p>Our API lets you use it in a wide variety of languages, from Python, Node.js, Java, Ruby and more. No matter what project you're working on, you can easily integrate in our API without switching any tools.</p>
+        <h1 style = "padding-bottom: 5%;">Built for Success with RapidAPI.</h1>
+        <p>Hosting our API on RapidAPI means you get more than just an API - you get access to a suite of benefits that ensure smooth integration and exceptional performance. It provides tools for testing and integrating our API, making it easier to build applications by leveraging external services without having to write all functionality from scratch.</p>
       </div>
       <div class = "two">
-        <img class = "img" src = "pricing.webp">
+        <img id = "rapid" src = "Rapid_Logo_Primary.png">
       </div>
     </div>
   </div>
 
+  <!-- pricing -->
   <section id="pricing">
 
       <div class="container py-3">
@@ -157,60 +165,62 @@
         </header>
       
         <main>
+          <h1 style = "padding-bottom: 5%; text-align: center; color: rgb(33, 150, 243); font-family: 'Libre Franklin', serif;">Discover how our easy-to-use API <br>outshines other plans.</h1>
           <div class="row row-cols-1 row-cols-md-2 mb-3 text-center" style = "text-align: left;">
             <div class="col">
-              <div class="card mb-4 rounded-3 shadow-sm border-dark">
+              <div class="card mb-4 rounded-3 shadow-sm">
                 <div class="card-header py-3">
                   <h4 class="my-0 fw-normal">Other Plans</h4>
                 </div>
                 <div class="card-body">
-                  <h1 class="card-title pricing-card-title">$15<small class="text-body-secondary fw-light">/mo</small></h1>
-                  <ul class="list-unstyled mt-3 mb-4">
-                    <li>- Having Either News or Player Profiles, But Never Both</li>
-                    <li>- No Understanding of How to Implement the API</li>
-                    <li>- Utilizing Inaccurate, Unreliable Sources</li>
-                    <li>- Low Usage Quotas</li>
-                    <li>- Outdated data</li>
+                  <h1 class="card-title pricing-card-title">$20<small class="text-body-secondary fw-light">/mo</small></h1>
+                  <ul class="list-unstyled mt-3 mb-4" >
+                    <li>• Having Either News or Player Profiles, But Never Both</li>
+                    <li>• Lack of API Implementation Knowledge</li>
+                    <li>• Use of Unreliable Data Sources</li>
+                    <li>• Restrictions on Usage Quotas</li>
+                    <li>• Dependence on Outdated Data</li>
+                    <li>• Excessively High Costs</li>
+                    <li>• Minimal Features and Flexibility</li>
                   </ul>
-                  <button type="button" class="w-100 btn btn-lg btn-primary btn-dark">Sign up for free</button>
                 </div>
               </div>
             </div>
             <div class="col">
-              <div class="card mb-4 rounded-3 shadow-sm border-dark ">
-                <div class="card-header py-3 text-bg-dark border-dark">
-                  <h4 class="my-0 fw-normal">Our Plan</h4>
+              <div class="card mb-4 rounded-3 shadow-sm border-primary ">
+                <div class="card-header py-3 text-bg-primary border-primary">
+                  <h4 class="my-0 fw-normal fw-bold">Our Plan</h4>
                 </div>
                 <div class="card-body">
-                  <h1 class="card-title pricing-card-title">$5<small class="text-body-secondary fw-light">/mo</small></h1>
+                  <h1 class="card-title pricing-card-title">$5<small class="text-body-secondary fw-primary">/mo</small></h1>
                   <ul class="list-unstyled mt-3 mb-4">
-                    <li>Having Either News or Player Profiles, But Never Both</li>
-                    <li>No Understanding of How to Implement the API</li>
-                    <li>Utilizing Inaccurate, Unreliable Sources</li>
-                    <li>Low Usage Quotas</li>
-                    <li>Outdated data</li>
+                    <li>• <span style = "text-decoration: underline;">2 in 1</span> - Soccer News AND Player Profiles</li>
+                    <li>• Easy API Implementation</li>
+                    <li>• Leveraging the Finest, Most Trusted Sources</li>
+                    <li>• High Usage Quotas</li>
+                    <li>• Real Time, Ever-Updating Data</li>
                   </ul>
-                  <button type="button" class="w-100 btn btn-lg btn-primary btn-dark">Contact us</button>
+                  <a href="https://rapidapi.com/mksrinivasula5/api/soccer-news-player-profiles-api"><button type="button"class="w-100 btn btn-lg btn-primary ">Get Started</button></a>
                 </div>
               </div>
             </div>
           </div>
   </section>
 
+  <!-- ways to use the api -->
   <section class="mb-30 md:mb-115">
     <div class="container">
         <div class="text-center text-gray-200 text-18 md:text-24 leading-a33 mb-40 md:mb-75">
-            <h3 class="text-black-100 mb-15">Six ways to use ScrapingBee for web harvesting</h3>
-            <p>Wondering how our customers use our web scraping API?</p>
-            <p>From a general web scrape to JavaScript rendering, our simple API does it all.</p>
+            <h3 class="text-black-100 mb-15">Six Ways to Use the Soccer News & Player Profiles API</h3>
+            
         </div>
         <div class="flex flex-wrap -mx-15">
             <div class="w-full sm:w-1/3 px-15 mb-40">
                 <div class="text-16 text-gray-200 leading-2 text-center max-w-321 mx-auto">
                     <div class="mb-27">
-                        <img class="inline-block" height="64" width="65" src="/images/icons/icon01.svg" alt="">
+                      <img class="inline-block" height="64" width="65" src="sa-cropped.svg" alt="">
                     </div>
-                    <h3 class="text-20 leading-a26 text-black-100 mb-15">1. General Web Scraping</h3>
+                    <h3 class="text-20 leading-a26 text-black-100 mb-15">1. Create a Soccer News Aggregator App</h3>
                     <p>ScrapingBee web scraping API works great for general web scraping tasks like real estate scraping, price-monitoring, extracting reviews without getting blocked. <a class="underline font-bold text-black-100" href="/documentation/">documentation</a></p>
                 </div>
             </div>
@@ -218,9 +228,9 @@
             <div class="w-full sm:w-1/3 px-15 mb-40">
                 <div class="text-16 text-gray-200 leading-2 text-center max-w-321 mx-auto">
                     <div class="mb-27">
-                        <img class="inline-block" height="64" width="65" src="/images/icons/data.svg" alt="">
+                      <img class="inline-block" height="64" width="65" src="sa-cropped.svg" alt="">
                     </div>
-                    <h3 class="text-20 leading-a26 text-black-100 mb-15">2. Data Extraction</h3>
+                    <h3 class="text-20 leading-a26 text-black-100 mb-15">2. Enhanced Soccer Blog or Website</h3>
                     <p>Getting HTML is cool, getting formatted JSON data is better. Thanks to our easy-to-use extraction rules, get just the data you need with one simple API call. <a class="underline font-bold text-black-100" href="/features/data-extraction">learn more</a></p>
                 </div>
             </div>
@@ -228,9 +238,9 @@
             <div class="w-full sm:w-1/3 px-15 mb-40">
                 <div class="text-16 text-gray-200 leading-2 text-center max-w-321 mx-auto">
                     <div class="mb-27">
-                        <img class="inline-block" height="64" width="65" src="/images/icons/js.svg" alt="">
+                      <img class="inline-block" height="64" width="65" src="sa-cropped.svg" alt="">
                     </div>
-                    <h3 class="text-20 leading-a26 text-black-100 mb-15">3. JavaScript scenario</h3>
+                    <h3 class="text-20 leading-a26 text-black-100 mb-15">3. Soccer Trivia or Quiz Game</h3>
                     <p>If you need to click, scroll, wait for some elements to appear or just run some custom JavaScript code on the website you want to scrape, check our JS scenario feature. <a class="underline font-bold text-black-100" href="/features/javascript-scenario">learn more</a></p>
                 </div>
             </div>
@@ -238,9 +248,9 @@
             <div class="w-full sm:w-1/3 px-15 mb-40">
                 <div class="text-16 text-gray-200 leading-2 text-center max-w-321 mx-auto">
                     <div class="mb-27">
-                        <img class="inline-block" height="64" width="65" src="/images/icons/picture-1.svg" alt="">
+                        <img class="inline-block" height="64" width="65" src="sa-cropped.svg" alt="">
                     </div>
-                    <h3 class="text-20 leading-a26 text-black-100 mb-15">4. Screenshots</h3>
+                    <h3 class="text-20 leading-a26 text-black-100 mb-15">4. Interactive Soccer Stats Dashboard</h3>
                     <p>Need a screenshot of that website and not HTML? You can do this very easily with our screenshot feature. We also support full page and partial screenshots! <a class="underline font-bold text-black-100" href="/features/screenshot">learn more</a></p>
                 </div>
             </div>
@@ -248,9 +258,9 @@
             <div class="w-full sm:w-1/3 px-15 mb-40">
                 <div class="text-16 text-gray-200 leading-2 text-center max-w-321 mx-auto">
                     <div class="mb-27">
-                        <img class="inline-block" height="64" width="65" src="/images/icons/search.svg" alt="">
+                      <img class="inline-block" height="64" width="65" src="sa-cropped.svg" alt="">
                     </div>
-                    <h3 class="text-20 leading-a26 text-black-100 mb-15">5. Search Engine Result Page</h3>
+                    <h3 class="text-20 leading-a26 text-black-100 mb-15">5. Customized Notifications or Alerts</h3>
                     <p>Scraping search engine result pages is extremely painful because of rate limits. Thanks to our Google search API, it's now easier than ever. <a class="underline font-bold text-black-100" href="/features/google">learn more</a></p>
                 </div>
             </div>
@@ -258,16 +268,28 @@
             <div class="w-full sm:w-1/3 px-15 mb-40">
                 <div class="text-16 text-gray-200 leading-2 text-center max-w-321 mx-auto">
                     <div class="mb-27">
-                        <img class="inline-block" height="64" width="65" src="/images/icons/nocode.svg" alt="">
+                      <img class="inline-block" height="64" width="65" src="sa-cropped.svg" alt="">
                     </div>
-                    <h3 class="text-20 leading-a26 text-black-100 mb-15">6. No code web scraping</h3>
+                    <h3 class="text-20 leading-a26 text-black-100 mb-15">6. Fantasy Soccer Team Management</h3>
                     <p>If coding is not your thing, you can leverage our Make integration to create custom web scraping engines without writing a single line of code! <a class="underline font-bold text-black-100" href="/features/make">learn more</a></p>
                 </div>
             </div>
         </div>
     </div>
 </section>
-  
+
+<div class="footer-container" >
+  <footer class="py-3 my-4 footer-container">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+      <li class="nav-item"><a href="#sources" class="nav-link px-2 text-body-secondary">Sources</a></li>
+      <li class="nav-item"><a href="#features" class="nav-link px-2 text-body-secondary">Features</a></li>
+      <li class="nav-item"><a href="#hosting" class="nav-link px-2 text-body-secondary">Hosting</a></li>
+      <li class="nav-item"><a href="#pricing" class="nav-link px-2 text-body-secondary">Pricing</a></li>
+    </ul>
+    <a href = "api.html"><p class="text-center text-body-secondary footer-container">© 2024 <span style = "text-decoration: underline; color: rgb(126, 24, 204);">Soccer Ranker</span></p></a>
+  </footer>
+</div>
   
 </body>
 </html>
