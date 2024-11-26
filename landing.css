@@ -89,7 +89,7 @@ h1{
 
 #rapid{ 
     position: relative;
-    height: 220px !important;
+    height: auto;
     align-items: center;
     transform: translateY(30%);
     
