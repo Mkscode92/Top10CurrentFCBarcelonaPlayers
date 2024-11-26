@@ -55,6 +55,24 @@ h1{
     font-size: calc(1.5rem + 1.5vw);
     text-wrap: balance;
 }
+h2{ 
+    font-size: calc(1rem + 1.5vw);
+}
+h3{
+    font-size: 0.85rem;
+}
+h4{
+    font-size: 1.25rem;
+    color: whitesmoke;
+    
+}
+#apiways h4{
+    padding-bottom: 2%;
+    
+}
+#apiways p{
+    color: rgb(215, 244, 182);
+}
 
 .topvideos video{
     width: 48%;
@@ -120,6 +138,12 @@ h1{
     gap: 200px;
     padding: 5%;
     text-align: left;
+}
+
+.wayswrap{ 
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
 }
 
 .one{
@@ -197,7 +221,7 @@ svg{
         display: none;
     }
     #getstart{
-        margin-left: 10px;
+        margin-left: 20px;
     }
 }
 
@@ -244,5 +268,12 @@ svg{
 .words{
     display: flex;
     align-items: center;
+    
+}
+
+div.waybox > div {
+    border: 5px solid rgb(177, 229, 118); 
+    border-radius: 25px;
+    padding: 5px;
     
 }
